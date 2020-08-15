@@ -1,0 +1,3455 @@
+{
+   "type": "FeatureCollection",
+   "features": [
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.642834649,35.0931584691 ]
+    },
+    "properties": {
+    "OUTLETID":8710100001,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"1135 BROADWAY BLVD NE STE 180",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87101
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.642789,35.093397 ]
+    },
+    "properties": {
+    "OUTLETID":8710200001,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1135 BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.642789,35.093398 ]
+    },
+    "properties": {
+    "OUTLETID":8710200002,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1135 BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.650597,35.083294 ]
+    },
+    "properties": {
+    "OUTLETID":8710200009,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"225 GOLD AVE SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6501588519,35.0844023694 ]
+    },
+    "properties": {
+    "OUTLETID":8710200010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"219 CENTRAL AVE NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.633955,35.087698 ]
+    },
+    "properties": {
+    "OUTLETID":8710200021,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"609 ENCINO PL NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.62533,35.092039 ]
+    },
+    "properties": {
+    "OUTLETID":8710200043,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1128 UNIVERSITY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.642789,35.093398 ]
+    },
+    "properties": {
+    "OUTLETID":8710200053,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1135 BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.643148818,35.090886887 ]
+    },
+    "properties": {
+    "OUTLETID":8710200057,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"800B BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.643148818,35.090886887 ]
+    },
+    "properties": {
+    "OUTLETID":8710200058,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"800B BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.643148818,35.090886887 ]
+    },
+    "properties": {
+    "OUTLETID":8710200059,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"800B BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.643148818,35.090886887 ]
+    },
+    "properties": {
+    "OUTLETID":8710200060,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"800B BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.643148818,35.090886887 ]
+    },
+    "properties": {
+    "OUTLETID":8710200061,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"800B BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.631878,35.088583 ]
+    },
+    "properties": {
+    "OUTLETID":8710200062,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"717 ENCINO PL NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6531464191,35.0884025756 ]
+    },
+    "properties": {
+    "OUTLETID":8710200065,
+    "BUSNAME":"USPS COLLECTION BOX - EXPRESS",
+    "ADDR1":"500 MARQUETTE AVE NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.653122,35.083583 ]
+    },
+    "properties": {
+    "OUTLETID":8710200069,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"201 5TH ST SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.653050407,35.083690257 ]
+    },
+    "properties": {
+    "OUTLETID":8710200070,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"201 5TH ST SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6446062239,35.0842923486 ]
+    },
+    "properties": {
+    "OUTLETID":8710200074,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"101 BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.654957,35.082957 ]
+    },
+    "properties": {
+    "OUTLETID":8710200092,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"625 SILVER AVE SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.654957,35.082957 ]
+    },
+    "properties": {
+    "OUTLETID":8710200093,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"625 SILVER AVE SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.645898,35.086105 ]
+    },
+    "properties": {
+    "OUTLETID":8710200095,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"121 TIJERAS AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.642789,35.093398 ]
+    },
+    "properties": {
+    "OUTLETID":8710200096,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"1135 BROADWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.653028,35.08366 ]
+    },
+    "properties": {
+    "OUTLETID":8710200099,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"201 5TH ST SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.653028,35.08366 ]
+    },
+    "properties": {
+    "OUTLETID":8710200100,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"201 5TH ST SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.649225,35.086306 ]
+    },
+    "properties": {
+    "OUTLETID":8710200102,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"40 FIRST PLAZA CTR NW STE 240",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.648968,35.085765 ]
+    },
+    "properties": {
+    "OUTLETID":8710200103,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"40 FIRST PLAZA CTR NW STE 240",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.651881,35.091166 ]
+    },
+    "properties": {
+    "OUTLETID":8710200104,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"520 LOMAS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6490011252,35.0857566737 ]
+    },
+    "properties": {
+    "OUTLETID":8710200117,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"40 FIRST PLAZA CTR NW STE 38",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6490011252,35.0857566737 ]
+    },
+    "properties": {
+    "OUTLETID":8710200118,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"40 FIRST PLAZA CTR NW STE 38",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6490011252,35.0857566737 ]
+    },
+    "properties": {
+    "OUTLETID":8710200120,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"40 FIRST PLAZA CTR NW STE 240",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6530504071,35.0836902567 ]
+    },
+    "properties": {
+    "OUTLETID":8710200121,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"201 5TH ST SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87102
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.669843,35.093841 ]
+    },
+    "properties": {
+    "OUTLETID":8710400002,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2016 CENTRAL AVE SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.671336,35.103237 ]
+    },
+    "properties": {
+    "OUTLETID":8710400004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"901 RIO GRANDE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.670394594,35.096568077 ]
+    },
+    "properties": {
+    "OUTLETID":8710400006,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"301 ROMERO ST NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.669737,35.093935 ]
+    },
+    "properties": {
+    "OUTLETID":8710400016,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"2016 CENTRAL AVE SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.669737,35.093935 ]
+    },
+    "properties": {
+    "OUTLETID":8710400020,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"2016 CENTRAL AVE SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.670571,35.096479 ]
+    },
+    "properties": {
+    "OUTLETID":8710400022,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"303 ROMERO ST NW STE 108",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.670571,35.096455 ]
+    },
+    "properties": {
+    "OUTLETID":8710400023,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"303 ROMERO ST NW STE 108",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6703975798,35.096625 ]
+    },
+    "properties": {
+    "OUTLETID":8710400024,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"303 ROMERO ST NW STE S108",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6697186523,35.0939161168 ]
+    },
+    "properties": {
+    "OUTLETID":8710400025,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"2016 CENTRAL AVE SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87104
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.682841,35.021918 ]
+    },
+    "properties": {
+    "OUTLETID":8710500009,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3733 ISLETA BLVD SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.682299,35.028229 ]
+    },
+    "properties": {
+    "OUTLETID":8710500010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1625 RIO BRAVO BLVD SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6745605356,35.0652266092 ]
+    },
+    "properties": {
+    "OUTLETID":8710500012,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1050 SUNSET RD SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6745605356,35.0652266092 ]
+    },
+    "properties": {
+    "OUTLETID":8710500023,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"1050 SUNSET RD SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6745605356,35.0652266092 ]
+    },
+    "properties": {
+    "OUTLETID":8710500024,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"1050 SUNSET RD SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.712782,35.080998 ]
+    },
+    "properties": {
+    "OUTLETID":8710500033,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"111 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6745605356,35.0652266092 ]
+    },
+    "properties": {
+    "OUTLETID":8710500034,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"1050 SUNSET RD SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87105
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6051548229,35.0797676966 ]
+    },
+    "properties": {
+    "OUTLETID":8710600003,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3500 CENTRAL AVE SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.634038,35.080945 ]
+    },
+    "properties": {
+    "OUTLETID":8710600007,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"201 CEDAR ST SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6195855504,35.0797941932 ]
+    },
+    "properties": {
+    "OUTLETID":8710600011,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"115 CORNELL DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.635571,35.079156 ]
+    },
+    "properties": {
+    "OUTLETID":8710600012,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1100 LEAD AVE SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.624335056,35.055116277 ]
+    },
+    "properties": {
+    "OUTLETID":8710600019,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2301 BUENA VISTA DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.634062,35.080942 ]
+    },
+    "properties": {
+    "OUTLETID":8710600020,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"201 CEDAR ST SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.621804,35.075812 ]
+    },
+    "properties": {
+    "OUTLETID":8710600031,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"320 YALE BLVD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.61954,35.08069 ]
+    },
+    "properties": {
+    "OUTLETID":8710600035,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"115 CORNELL DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.604732,35.087786 ]
+    },
+    "properties": {
+    "OUTLETID":8710600038,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3501 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.61954,35.08069 ]
+    },
+    "properties": {
+    "OUTLETID":8710600040,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"115 CORNELL DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6167936094,35.0495784678 ]
+    },
+    "properties": {
+    "OUTLETID":8710600041,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2200 SUNPORT BLVD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.617415,35.087441 ]
+    },
+    "properties": {
+    "OUTLETID":8710600042,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2211 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.625466972,35.048258654 ]
+    },
+    "properties": {
+    "OUTLETID":8710600045,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"2100 GEORGE RD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6195855504,35.0797941932 ]
+    },
+    "properties": {
+    "OUTLETID":8710600047,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"115 CORNELL DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87106
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6297321251,35.1117813234 ]
+    },
+    "properties": {
+    "OUTLETID":8710700001,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2715 BROADBENT PKWY NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.640711,35.146412 ]
+    },
+    "properties": {
+    "OUTLETID":8710700004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6125 4TH ST NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.603976939,35.129979 ]
+    },
+    "properties": {
+    "OUTLETID":8710700007,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4308 CARLISLE BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.66822,35.138045 ]
+    },
+    "properties": {
+    "OUTLETID":8710700019,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4022 RIO GRANDE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.625095,35.13633 ]
+    },
+    "properties": {
+    "OUTLETID":8710700021,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"435 MONTANO RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.637798,35.133486 ]
+    },
+    "properties": {
+    "OUTLETID":8710700026,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5100 2ND ST NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.645892,35.121189 ]
+    },
+    "properties": {
+    "OUTLETID":8710700027,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"424 VERANDA RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6297321251,35.1117813234 ]
+    },
+    "properties": {
+    "OUTLETID":8710700028,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2715 BROADBENT PKWY NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6297321251,35.1117813234 ]
+    },
+    "properties": {
+    "OUTLETID":8710700029,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2715 BROADBENT PKWY NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.645892,35.121189 ]
+    },
+    "properties": {
+    "OUTLETID":8710700049,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"424 VERANDA RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.645892,35.121189 ]
+    },
+    "properties": {
+    "OUTLETID":8710700050,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"424 VERANDA RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.630905,35.136476 ]
+    },
+    "properties": {
+    "OUTLETID":8710700051,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"110 MONTANO RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.630932,35.13644 ]
+    },
+    "properties": {
+    "OUTLETID":8710700052,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"110 MONTANO RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.631075,35.136379 ]
+    },
+    "properties": {
+    "OUTLETID":8710700053,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"110 MONTANO RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.654076,35.122198 ]
+    },
+    "properties": {
+    "OUTLETID":8710700064,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1130 CANDELARIA RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6458315221,35.1215312284 ]
+    },
+    "properties": {
+    "OUTLETID":8710700066,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"424 VERANDA RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87107
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.582495,35.05805 ]
+    },
+    "properties": {
+    "OUTLETID":8710800006,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5400 GIBSON BLVD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.582459,35.055269 ]
+    },
+    "properties": {
+    "OUTLETID":8710800010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2100 RIDGECREST DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.603287609,35.071083251 ]
+    },
+    "properties": {
+    "OUTLETID":8710800012,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"609 PARKLAND CIR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.585503,35.079739 ]
+    },
+    "properties": {
+    "OUTLETID":8710800024,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"300 SAN MATEO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.581844566,35.075862 ]
+    },
+    "properties": {
+    "OUTLETID":8710800026,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"111 ALVARADO DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.581844566,35.075862 ]
+    },
+    "properties": {
+    "OUTLETID":8710800027,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"111 ALVARADO DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.569351,35.057765 ]
+    },
+    "properties": {
+    "OUTLETID":8710800033,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6440 GIBSON BLVD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.585891,35.07886 ]
+    },
+    "properties": {
+    "OUTLETID":8710800039,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5301 CENTRAL AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.581844566,35.075862 ]
+    },
+    "properties": {
+    "OUTLETID":8710800040,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"111 ALVARADO DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.581844566,35.075862 ]
+    },
+    "properties": {
+    "OUTLETID":8710800050,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"111 ALVARADO DR SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87108
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.587619,35.169375 ]
+    },
+    "properties": {
+    "OUTLETID":8710900001,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7770 JEFFERSON ST NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5873499334,35.1546486916 ]
+    },
+    "properties": {
+    "OUTLETID":8710900002,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6100 PAN AMERICAN EAST FWY NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.593106,35.164356 ]
+    },
+    "properties": {
+    "OUTLETID":8710900003,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7412 JEFFERSON ST NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5931376913,35.1642744596 ]
+    },
+    "properties": {
+    "OUTLETID":8710900004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7412 JEFFERSON ST NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.591177,35.130257 ]
+    },
+    "properties": {
+    "OUTLETID":8710900009,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4700 MONTGOMERY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.583228,35.138526 ]
+    },
+    "properties": {
+    "OUTLETID":8710900010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5600 MCLEOD RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.600945,35.133043 ]
+    },
+    "properties": {
+    "OUTLETID":8710900011,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3901 MONTGOMERY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.596843,35.131262 ]
+    },
+    "properties": {
+    "OUTLETID":8710900012,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4101 MONTGOMERY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.56755,35.130414 ]
+    },
+    "properties": {
+    "OUTLETID":8710900019,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7200 MONTGOMERY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.560342555,35.130638542 ]
+    },
+    "properties": {
+    "OUTLETID":8710900020,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7520 MONTGOMERY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.594652,35.156132 ]
+    },
+    "properties": {
+    "OUTLETID":8710900023,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4200 OSUNA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.560631,35.133398 ]
+    },
+    "properties": {
+    "OUTLETID":8710900027,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7545 PRAIRIE RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.586310366,35.145377413 ]
+    },
+    "properties": {
+    "OUTLETID":8710900031,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6100 SAN MATEO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.552894,35.14021 ]
+    },
+    "properties": {
+    "OUTLETID":8710900034,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8205 SPAIN RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5758705255,35.1599174688 ]
+    },
+    "properties": {
+    "OUTLETID":8710900037,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6255 SAN ANTONIO DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.560819,35.158758 ]
+    },
+    "properties": {
+    "OUTLETID":8710900041,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7007 WYOMING BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.567536,35.145557 ]
+    },
+    "properties": {
+    "OUTLETID":8710900043,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6755 ACADEMY RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.567554,35.145561 ]
+    },
+    "properties": {
+    "OUTLETID":8710900047,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6755 ACADEMY RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.585257,35.15275 ]
+    },
+    "properties": {
+    "OUTLETID":8710900048,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5700 HARPER DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5655127885,35.1306254951 ]
+    },
+    "properties": {
+    "OUTLETID":8710900053,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7200 MONTGOMERY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.58254,35.145172 ]
+    },
+    "properties": {
+    "OUTLETID":8710900060,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5801 OSUNA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.555127,35.146169 ]
+    },
+    "properties": {
+    "OUTLETID":8710900069,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5901 WYOMING BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.559762574,35.159814232 ]
+    },
+    "properties": {
+    "OUTLETID":8710900071,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7120 WYOMING BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.559648,35.160646 ]
+    },
+    "properties": {
+    "OUTLETID":8710900072,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7120 WYOMING BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.601921,35.143629 ]
+    },
+    "properties": {
+    "OUTLETID":8710900099,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3838 COMMONS AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.594824,35.151266 ]
+    },
+    "properties": {
+    "OUTLETID":8710900101,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4101 JEFFERSON PLZ NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5758705255,35.1599174688 ]
+    },
+    "properties": {
+    "OUTLETID":8710900104,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"6255 SAN ANTONIO DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5758705255,35.1599174688 ]
+    },
+    "properties": {
+    "OUTLETID":8710900120,
+    "BUSNAME":"USPS COLLECTION BOX - APC",
+    "ADDR1":"6255 SAN ANTONIO DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.570854,35.1454194649 ]
+    },
+    "properties": {
+    "OUTLETID":8710900128,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6707 ACADEMY RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.60357,35.153535 ]
+    },
+    "properties": {
+    "OUTLETID":8710900129,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3600 OSUNA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5758705255,35.1599174688 ]
+    },
+    "properties": {
+    "OUTLETID":8710900131,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"6255 SAN ANTONIO DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87109
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.552604,35.093452 ]
+    },
+    "properties": {
+    "OUTLETID":8711000004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8300 CONSTITUTION AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.555494,35.092961 ]
+    },
+    "properties": {
+    "OUTLETID":8711000005,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8100 CONSTITUTION PL NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.575103,35.102837 ]
+    },
+    "properties": {
+    "OUTLETID":8711000008,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6301 INDIAN SCHOOL RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.591572555,35.101959526 ]
+    },
+    "properties": {
+    "OUTLETID":8711000010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4801 INDIAN SCHOOL RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.567642,35.106194 ]
+    },
+    "properties": {
+    "OUTLETID":8711000019,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2424 LOUISIANA BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.568686919,35.1065120778 ]
+    },
+    "properties": {
+    "OUTLETID":8711000021,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2440 LOUISIANA BLVD NE STE 100",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.568024,35.108194 ]
+    },
+    "properties": {
+    "OUTLETID":8711000022,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2500 LOUISIANA BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5571602599,35.1059853028 ]
+    },
+    "properties": {
+    "OUTLETID":8711000023,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7805 CUTLER AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5584016932,35.0909414716 ]
+    },
+    "properties": {
+    "OUTLETID":8711000029,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7901 MOUNTAIN RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.558752,35.109027 ]
+    },
+    "properties": {
+    "OUTLETID":8711000042,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7618 MENAUL BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.586279,35.125608 ]
+    },
+    "properties": {
+    "OUTLETID":8711000045,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3900 SAN MATEO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.585423,35.129663 ]
+    },
+    "properties": {
+    "OUTLETID":8711000046,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4300 SAN MATEO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.577729,35.107745 ]
+    },
+    "properties": {
+    "OUTLETID":8711000047,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2501 SAN PEDRO DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.578876,35.087773 ]
+    },
+    "properties": {
+    "OUTLETID":8711000051,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6001 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.572752,35.10757 ]
+    },
+    "properties": {
+    "OUTLETID":8711000059,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6600 MENAUL BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.575107,35.102863 ]
+    },
+    "properties": {
+    "OUTLETID":8711000063,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6301 INDIAN SCHOOL RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.568054,35.108181 ]
+    },
+    "properties": {
+    "OUTLETID":8711000069,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2500 LOUISIANA BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5687194502,35.1082267544 ]
+    },
+    "properties": {
+    "OUTLETID":8711000070,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2500 LOUISIANA BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.558625,35.091049 ]
+    },
+    "properties": {
+    "OUTLETID":8711000073,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"7901 MOUNTAIN RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.585458,35.129679 ]
+    },
+    "properties": {
+    "OUTLETID":8711000076,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4300 SAN MATEO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.577605,35.103501 ]
+    },
+    "properties": {
+    "OUTLETID":8711000079,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2201 SAN PEDRO DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.575946,35.10498 ]
+    },
+    "properties": {
+    "OUTLETID":8711000080,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6100 UPTOWN BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.596813615,35.107633362 ]
+    },
+    "properties": {
+    "OUTLETID":8711000118,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"2505 GRACELAND DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.596813615,35.107633362 ]
+    },
+    "properties": {
+    "OUTLETID":8711000131,
+    "BUSNAME":"USPS COLLECTION BOX - APC",
+    "ADDR1":"2505 GRACELAND DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.596813615,35.107633362 ]
+    },
+    "properties": {
+    "OUTLETID":8711000132,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2505 GRACELAND DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.596813615,35.107633362 ]
+    },
+    "properties": {
+    "OUTLETID":8711000133,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2505 GRACELAND DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5531177655,35.1090644775 ]
+    },
+    "properties": {
+    "OUTLETID":8711000139,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8204 MENAUL BLVD NE STE A",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.596813615,35.107633362 ]
+    },
+    "properties": {
+    "OUTLETID":8711000142,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"2505 GRACELAND DR NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87110
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5332194173,35.1379434446 ]
+    },
+    "properties": {
+    "OUTLETID":8711100002,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5200 EUBANK BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.550679,35.136574 ]
+    },
+    "properties": {
+    "OUTLETID":8711100010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8400 OSUNA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.550931,35.147215 ]
+    },
+    "properties": {
+    "OUTLETID":8711100012,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8040 ACADEMY RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.526758,35.147623 ]
+    },
+    "properties": {
+    "OUTLETID":8711100019,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5850 EUBANK BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5316805255,35.1162604799 ]
+    },
+    "properties": {
+    "OUTLETID":8711100037,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9719 CANDELARIA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5316805255,35.1162604799 ]
+    },
+    "properties": {
+    "OUTLETID":8711100038,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9719 CANDELARIA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5234342146,35.1541476189 ]
+    },
+    "properties": {
+    "OUTLETID":8711100042,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"10400 ACADEMY RD NE STE 100",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.516106,35.118595 ]
+    },
+    "properties": {
+    "OUTLETID":8711100045,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3301 JUAN TABO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5316805255,35.1162604799 ]
+    },
+    "properties": {
+    "OUTLETID":8711100053,
+    "BUSNAME":"USPS COLLECTION BOX - APC",
+    "ADDR1":"9719 CANDELARIA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.540353,35.131165 ]
+    },
+    "properties": {
+    "OUTLETID":8711100054,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9201 MONTGOMERY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5316805255,35.1162604799 ]
+    },
+    "properties": {
+    "OUTLETID":8711100055,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"9719 CANDELARIA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5316805255,35.1162604799 ]
+    },
+    "properties": {
+    "OUTLETID":8711100056,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"9719 CANDELARIA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5316805255,35.1162604799 ]
+    },
+    "properties": {
+    "OUTLETID":8711100057,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"9719 CANDELARIA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5316805255,35.1162604799 ]
+    },
+    "properties": {
+    "OUTLETID":8711100061,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"9719 CANDELARIA RD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87111
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.515556396,35.115442889 ]
+    },
+    "properties": {
+    "OUTLETID":8711200001,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2910 JUAN TABO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5506179424,35.0963906961 ]
+    },
+    "properties": {
+    "OUTLETID":8711200004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1508 WYOMING BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5326194658,35.0949006488 ]
+    },
+    "properties": {
+    "OUTLETID":8711200005,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1412 EUBANK BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.528243,35.087293 ]
+    },
+    "properties": {
+    "OUTLETID":8711200007,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"10701 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.516706,35.087265 ]
+    },
+    "properties": {
+    "OUTLETID":8711200008,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"11825 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.548349,35.108054 ]
+    },
+    "properties": {
+    "OUTLETID":8711200009,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8500 MENAUL BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.543364,35.106886 ]
+    },
+    "properties": {
+    "OUTLETID":8711200011,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8911 NORTHEASTERN BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.496094,35.095951 ]
+    },
+    "properties": {
+    "OUTLETID":8711200017,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1520 TRAMWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.551223,35.114919 ]
+    },
+    "properties": {
+    "OUTLETID":8711200020,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2601 WYOMING BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.50683,35.089449 ]
+    },
+    "properties": {
+    "OUTLETID":8711200021,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1025 CHELWOOD PARK BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.514694,35.10866 ]
+    },
+    "properties": {
+    "OUTLETID":8711200024,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2200 JUAN TABO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.532354,35.095174 ]
+    },
+    "properties": {
+    "OUTLETID":8711200025,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1412 EUBANK BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.548311,35.108082 ]
+    },
+    "properties": {
+    "OUTLETID":8711200027,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8500 MENAUL BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.51705,35.099714 ]
+    },
+    "properties": {
+    "OUTLETID":8711200029,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"11600 HAINES AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.517159,35.099743 ]
+    },
+    "properties": {
+    "OUTLETID":8711200049,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"11600 HAINES AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.517159,35.099743 ]
+    },
+    "properties": {
+    "OUTLETID":8711200050,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"11600 HAINES AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.517159,35.099743 ]
+    },
+    "properties": {
+    "OUTLETID":8711200059,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"11600 HAINES AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.517159,35.099743 ]
+    },
+    "properties": {
+    "OUTLETID":8711200060,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"11600 HAINES AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.550308,35.102486 ]
+    },
+    "properties": {
+    "OUTLETID":8711200061,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1900 WYOMING BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.516042722,35.099676506 ]
+    },
+    "properties": {
+    "OUTLETID":8711200066,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"11600 HAINES AVE NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87112
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.590082,35.191157 ]
+    },
+    "properties": {
+    "OUTLETID":8711300010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9201 SAN MATEO BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87113
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.646670569,35.204102334 ]
+    },
+    "properties": {
+    "OUTLETID":8711400000,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"10701 CORRALES RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6786992062,35.1977265662 ]
+    },
+    "properties": {
+    "OUTLETID":8711400002,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4611 GREENE ST NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.646670569,35.204102334 ]
+    },
+    "properties": {
+    "OUTLETID":8711400003,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"10701 CORRALES RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.651467,35.19967 ]
+    },
+    "properties": {
+    "OUTLETID":8711400004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"10131 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6206835548,35.185443141 ]
+    },
+    "properties": {
+    "OUTLETID":8711400009,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9132 4TH ST NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.652140966,35.208511427 ]
+    },
+    "properties": {
+    "OUTLETID":8711400021,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3613 HIGHWAY 528 NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.673787,35.183855 ]
+    },
+    "properties": {
+    "OUTLETID":8711400023,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4600 PARADISE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.673677,35.18383 ]
+    },
+    "properties": {
+    "OUTLETID":8711400024,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4600 PARADISE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.673677,35.18383 ]
+    },
+    "properties": {
+    "OUTLETID":8711400029,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"4600 PARADISE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.620741,35.185397 ]
+    },
+    "properties": {
+    "OUTLETID":8711400030,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"9132 4TH ST NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.673677,35.18383 ]
+    },
+    "properties": {
+    "OUTLETID":8711400035,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"4600 PARADISE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6634512461,35.1855306631 ]
+    },
+    "properties": {
+    "OUTLETID":8711400037,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9371 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.673677,35.18383 ]
+    },
+    "properties": {
+    "OUTLETID":8711400042,
+    "BUSNAME":"USPS COLLECTION BOX - APC",
+    "ADDR1":"4600 PARADISE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.673677,35.18383 ]
+    },
+    "properties": {
+    "OUTLETID":8711400044,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"4600 PARADISE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6803268795,35.1872467798 ]
+    },
+    "properties": {
+    "OUTLETID":8711400053,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"4600 PARADISE BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6466705688,35.2041023342 ]
+    },
+    "properties": {
+    "OUTLETID":8711400057,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"10701 COORS BLVD NW STE 19A",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6466705688,35.2041023342 ]
+    },
+    "properties": {
+    "OUTLETID":8711400058,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"10701 COORS BLVD NW STE 19A",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6466705688,35.2041023342 ]
+    },
+    "properties": {
+    "OUTLETID":8711400059,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"10701 COORS BLVD NW STE 19A",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6206835548,35.185443141 ]
+    },
+    "properties": {
+    "OUTLETID":8711400060,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"9132 4TH ST NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87114
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.604193,35.051809 ]
+    },
+    "properties": {
+    "OUTLETID":8711500002,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4500 BIGGS AVE SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.558142,35.059103 ]
+    },
+    "properties": {
+    "OUTLETID":8711500007,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8001 GIBSON SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.553638,35.054755 ]
+    },
+    "properties": {
+    "OUTLETID":8711500012,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1400 1ST ST SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.558358,35.05265 ]
+    },
+    "properties": {
+    "OUTLETID":8711500019,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"DEPT OF ENERGY SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.553586,35.055246 ]
+    },
+    "properties": {
+    "OUTLETID":8711500020,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1400 1ST ST SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.571255,35.050376 ]
+    },
+    "properties": {
+    "OUTLETID":8711500022,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2251 AIR GUARD RD",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.553529,35.054768 ]
+    },
+    "properties": {
+    "OUTLETID":8711500023,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"1400 1ST ST SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.590873,35.052298 ]
+    },
+    "properties": {
+    "OUTLETID":8711500024,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4500 BIGGS AVE SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87115
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.625466972,35.048258654 ]
+    },
+    "properties": {
+    "OUTLETID":8711900002,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2100 GEORGE RD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.625466972,35.048258654 ]
+    },
+    "properties": {
+    "OUTLETID":8711900003,
+    "BUSNAME":"USPS COLLECTION BOX - EXPRESS",
+    "ADDR1":"2100 GEORGE RD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.625466972,35.048258654 ]
+    },
+    "properties": {
+    "OUTLETID":8711900005,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2100 GEORGE RD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6286035936,35.046665762 ]
+    },
+    "properties": {
+    "OUTLETID":8711900006,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"2100 GEORGE SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87119
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6834242994,35.1530072789 ]
+    },
+    "properties": {
+    "OUTLETID":8712000004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6200 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.702452,35.11955 ]
+    },
+    "properties": {
+    "OUTLETID":8712000005,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"3301 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.7017945954,35.1168649731 ]
+    },
+    "properties": {
+    "OUTLETID":8712000007,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"2929 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.694694,35.1526294583 ]
+    },
+    "properties": {
+    "OUTLETID":8712000010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"4801 MONTANO RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.7039690554,35.1213374572 ]
+    },
+    "properties": {
+    "OUTLETID":8712000011,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"5300 SEQUOIA RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.68298,35.153125 ]
+    },
+    "properties": {
+    "OUTLETID":8712000014,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6200 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.689505,35.178698 ]
+    },
+    "properties": {
+    "OUTLETID":8712000015,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"8301 GOLF COURSE RD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.6731136896,35.1731428729 ]
+    },
+    "properties": {
+    "OUTLETID":8712000021,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"6641 CAMINITO COORS NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87120
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.709221,35.094026 ]
+    },
+    "properties": {
+    "OUTLETID":8712100001,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"640 COORS BLVD NW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87121
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.700621,35.070005 ]
+    },
+    "properties": {
+    "OUTLETID":8712100003,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"921 OLD COORS DR SW",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87121
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.496129022,35.188506241 ]
+    },
+    "properties": {
+    "OUTLETID":8712200001,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9500 TRAMWAY BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87122
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.546894,35.072282 ]
+    },
+    "properties": {
+    "OUTLETID":8712300004,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"9000 ZUNI RD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.497522,35.066663 ]
+    },
+    "properties": {
+    "OUTLETID":8712300010,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"200 TRAMWAY BLVD SE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.501447,35.086922 ]
+    },
+    "properties": {
+    "OUTLETID":8712300017,
+    "BUSNAME":"USPS COLLECTION BOX - BLUE BOX",
+    "ADDR1":"13101 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.501975,35.087032 ]
+    },
+    "properties": {
+    "OUTLETID":8712300019,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"13101 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.501752,35.086998 ]
+    },
+    "properties": {
+    "OUTLETID":8712300020,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"13101 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.501339,35.086816 ]
+    },
+    "properties": {
+    "OUTLETID":8712300021,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"13101 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87123
+    }
+  },
+  {
+    "type": "Feature",
+    "geometry": {
+       "type": "Point",
+       "coordinates":  [ -106.5009888337,35.0864944538 ]
+    },
+    "properties": {
+    "OUTLETID":8712300030,
+    "BUSNAME":"USPS COLLECTION BOX - PO LOBBY",
+    "ADDR1":"13101 LOMAS BLVD NE",
+    "CITY":"ALBUQUERQUE",
+    "STATE":"NM",
+    "ZIP":87123
+    }
+  }
+]
+}
