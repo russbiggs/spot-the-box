@@ -49,7 +49,7 @@ import {BackBtn} from './buttons';
     map.on('load', function() {
             map.addSource('points', {
                 'type': 'geojson',
-                'data': '/data/abq_po_box.geojson'
+                'data': 'data/abq_po_box.geojson'
             });
         
             map.addLayer({
