@@ -38,31 +38,50 @@ import {BackBtn} from './buttons';
     emitter.on('show-map', form.hide);
 
 
-    mapboxgl.accessToken = 'pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNpZXQ0andwaDAwNDhzcG0ycmp6YzlyZ3UifQ.NM3xVtCXK72k6Lg9o2DEMg';
+    mapboxgl.accessToken = 'pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNrZHg2am55ejE3aHYyeWtqOGtocjh4ejgifQ.Qg_LH8LUNchJZBPsqDme9g';
     var map = new mapboxgl.Map({
     container: 'map',
     style: 'mapbox://styles/mapbox/streets-v11',
     center: [-106.65, 35.08],
     zoom: 9 
     });
-    
+
+    map.addControl(
+        new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl
+        })
+    );
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+    map.addControl(
+        new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true
+        })
+    );
+
     map.on('load', function() {
-            map.addSource('points', {
-                'type': 'geojson',
-                'data': 'https://russbiggs.github.io/usps-collection-box-app/data/abq_po_box.geojson'
+            map.addSource('collection-box-src', {
+                type: 'vector',
+                url: 'mapbox://mikelmaron.3ws9y5k1'
             });
         
             map.addLayer({
-                id: 'points',
-                type: 'circle',
-                source: 'points',
+                'id': 'collection-boxes',
+                'type': 'circle',
+                'source': 'collection-box-src',
+                'source-layer': 'collection_box_trim_valid-0tbyft',
                 paint: {
                     'circle-color': '#004B87',
-                    'circle-radius': 10
+                    'circle-radius': 6
                 }
             });
         
-            map.on('click', 'points', function(e) {
+            map.on('click', 'collection-boxes', function(e) {
                 emitter.emit('point-select', e.features[0].properties)
             });
         });
