@@ -31,7 +31,8 @@ import Snack from './snack';
     emitter.on('show-map', form.hide);
     emitter.on('data-save', showMap);
     emitter.on('data-save', form.hide);
-    emitter.on('data-save', snack.showSnack)
+    emitter.on('data-save', snack.showSnack);
+    emitter.on('data-save', backBtn.hide)
 
     mapboxgl.accessToken = 'pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNrZHg2am55ejE3aHYyeWtqOGtocjh4ejgifQ.Qg_LH8LUNchJZBPsqDme9g';
     var map = new mapboxgl.Map({

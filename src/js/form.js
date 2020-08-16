@@ -1,6 +1,5 @@
 class Form {
     constructor(emitter) {
-        this.data;
         this.emitter = emitter;
         this.containerElem = document.querySelector('.js-data-entry-container')
         this.removedBtn = new RemovedBtn(emitter);
@@ -16,9 +15,6 @@ class Form {
 
 
     update(data) {
-        this.data = {
-            outletId: data.outletId
-        }
         this.removedBtn.outletId = data.OUTLETID;
         this.presentBtn.outletId = data.OUTLETID;
         this.collectionBoxInfo.innerHTML = `<p>Address:${data.ADDR1}</p><p>Outlet ID:${data.OUTLETID}</p>`
@@ -52,7 +48,6 @@ class RemovedBtn {
             status: 'removed'
         }
         this.emitter.emit('data-update', data)
-
     }
 
 }
@@ -81,6 +76,7 @@ class SaveBtn {
     constructor(emitter) {
         this.elem = document.querySelector('.js-btn-save');
         this.emitter = emitter;
+        this.active = false;
         this.data = [];
         this.update = this.update.bind(this);
         this.onClick = this.onClick.bind(this)
@@ -100,7 +96,11 @@ class SaveBtn {
         this.emitter.emit('data-save')
     }
 
-    async update(data) {
+    update(data) {
+        if (!this.active) {
+            this.active = true;
+            this.elem.disabled = false;
+        }
         this.data = data;
     }
 }

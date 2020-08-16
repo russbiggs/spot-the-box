@@ -1,0 +1,26 @@
+
+.snack {
+    z-index: 9;
+    text-align: center;
+    position: fixed;
+    left: calc(50% - 140px);
+    height: 50px;
+    padding: 15px;
+    width: 280px;
+    color: white;
+    background-color: #333;
+    line-height: 20px;
+    opacity: 0.9;
+    bottom: 0;
+    transform: translateY(62px);
+    will-change: transform;
+    transition: transform 0.4s ease-in-out;
+}
+
+.snack--hidden {
+    background-color: white;
+}
+
+.snack--visible {
+    transform: none;
+}

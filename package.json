@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && webpack"
+    "clean": "rm -rf dist && mkdir dist",
+    "build-css": "node-sass --include-path scss src/scss/main.scss  dist/style.css --output-style compressed",
+    "build-js": " webpack",
+    "build": "yarn run clean && yarn run build-css && yarn run build-js"
   },
   "license": "MIT",
   "dependencies": {
