@@ -80,6 +80,13 @@ import {BackBtn} from './buttons';
                     'circle-radius': 6
                 }
             });
+
+            map.on('mouseenter', 'collection-boxes', function() {
+                map.getCanvas().style.cursor = 'pointer';
+            });
+            map.on('mouseleave', 'collection-boxes', function() {
+                map.getCanvas().style.cursor = '';
+            });
         
             map.on('click', 'collection-boxes', function(e) {
                 emitter.emit('point-select', e.features[0].properties)
