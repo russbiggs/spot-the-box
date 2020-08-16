@@ -3,12 +3,15 @@ import mitt from 'mitt';
 
  import Form from './form';
 import {BackBtn} from './buttons';
+import Snack from './snack';
 
 {
     const emitter = mitt();
 
     const form = new Form(emitter);
     const backBtn = new BackBtn(emitter);
+
+    const snack = new Snack();
 
     function hideMap() {
         const overviewContainer = document.querySelector('.overview-container');
@@ -20,30 +23,22 @@ import {BackBtn} from './buttons';
         overviewContainer.classList.remove('overview-container--hidden');
     }
 
-    async function storeData(data) {
-        let collectionBoxes = await get('collection-boxes');
-        if (!collectionBoxes) {
-            collectionBoxes = [];
-        }
-        collectionBoxes.push(data);
-        await set('collection-boxes', collectionBoxes);
-    }
-
     emitter.on('point-select', form.show)
     emitter.on('point-select', hideMap)
     emitter.on('point-select', backBtn.show)
     emitter.on('data-update', form.saveBtn.update)
-    emitter.on('save-data', storeData)
     emitter.on('show-map', showMap);
     emitter.on('show-map', form.hide);
-
+    emitter.on('data-save', showMap);
+    emitter.on('data-save', form.hide);
+    emitter.on('data-save', snack.showSnack)
 
     mapboxgl.accessToken = 'pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNrZHg2am55ejE3aHYyeWtqOGtocjh4ejgifQ.Qg_LH8LUNchJZBPsqDme9g';
     var map = new mapboxgl.Map({
-    container: 'map',
-    style: 'mapbox://styles/mapbox/streets-v11',
-    center: [-106.65, 35.08],
-    zoom: 9 
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v11',
+        center: [-106.65, 35.08],
+        zoom: 9 
     });
 
     map.addControl(

@@ -1,5 +1,3 @@
-import { set, get } from 'idb-keyval';
-
 class Form {
     constructor(emitter) {
         this.data;
@@ -7,7 +5,7 @@ class Form {
         this.containerElem = document.querySelector('.js-data-entry-container')
         this.removedBtn = new RemovedBtn(emitter);
         this.presentBtn = new PresentBtn(emitter);
-        this.saveBtn = new SaveBtn()
+        this.saveBtn = new SaveBtn(emitter)
         this.collectionBoxInfo = document.querySelector('.js-collection-box-info');
 
         this.show = this.show.bind(this);
@@ -71,18 +69,18 @@ class PresentBtn {
 
     onClick() {
         const data = {
-            outletId : this.outletId,
+            outlet : this.outletId,
             status: 'present'
         }
-        this.emitter.emit('data-update', data)
+        this.emitter.emit('data-update', data);
     }
-
 }
 
 
 class SaveBtn {
-    constructor() {
-        this.elem = document.querySelector('.js-btn-save')
+    constructor(emitter) {
+        this.elem = document.querySelector('.js-btn-save');
+        this.emitter = emitter;
         this.data = [];
         this.update = this.update.bind(this);
         this.onClick = this.onClick.bind(this)
@@ -91,26 +89,19 @@ class SaveBtn {
     }
 
     async onClick() {
-        let collectionBoxes = await get('collection-boxes');
-        if (!collectionBoxes) {
-            collectionBoxes = [];
-        }
-        collectionBoxes.push(...this.data);
-        this.data = [];
-        await set('collection-boxes', collectionBoxes);
+        const url = 'https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox';
+        await fetch(url, {method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(this.data) 
+        })
+        this.data = {};
+        this.emitter.emit('data-save')
     }
 
     async update(data) {
-        let collectionBoxes = await get('collection-boxes');
-        if (!collectionBoxes) {
-            collectionBoxes = [];
-        }
-        const index = collectionBoxes.findIndex(x => x.outletId == data.outletId)
-        if (index == -1) {
-            this.data.push(data);
-        } else {
-            this.data[index] = data;
-        }
+        this.data = data;
     }
 }
 
