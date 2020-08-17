@@ -14,11 +14,12 @@ class Form {
     }
 
 
-    update(properties) {
+    update(feature) {
+        const properties = feature.properties;
         const data = { 
             outlet:properties.OUTLETID, 
-            lat: properties.LATITUDE, 
-            lng: properties.LONGITUDE
+            lat: feature.geometry.coordinates[1], 
+            lng: feature.geometry.coordinates[0]
         }
         this.removedBtn.data = data;
         this.presentBtn.data = data;

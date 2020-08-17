@@ -33,9 +33,11 @@ import Snack from './snack';
     emitter.on('data-save', form.hide);
     emitter.on('data-save', snack.showSnack);
     emitter.on('data-save', backBtn.hide)
+    emitter.on('data-save', refreshData);
+
 
     mapboxgl.accessToken = 'pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNrZHg2am55ejE3aHYyeWtqOGtocjh4ejgifQ.Qg_LH8LUNchJZBPsqDme9g';
-    var map = new mapboxgl.Map({
+    const map = new mapboxgl.Map({
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-106.65, 35.08],
@@ -61,6 +63,12 @@ import Snack from './snack';
     );
 
 
+    function refreshData() {
+        fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
+            map.getSource('collection-box-surveyed-src').setData(data)
+        })
+    }
+
     fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
         
         map.on('load', function() {
@@ -82,7 +90,13 @@ import Snack from './snack';
                 'source-layer': 'collection_box_trim_valid-0tbyft',
                 paint: {
                     'circle-color': '#004B87',
-                    'circle-radius': 6
+                    'circle-radius': {
+                        'base': 4,
+                        'stops': [
+                        [9, 4],
+                        [22, 180]
+                        ]
+                    }
                 }
             });
 
@@ -103,12 +117,12 @@ import Snack from './snack';
                 paint: {
                     'circle-color': expression,
                     'circle-radius': {
-                        'base': 1.75,
+                        'base': 4,
                         'stops': [
-                        [12, 2],
+                        [9, 4],
                         [22, 180]
                         ]
-                        }
+                    }
                 }
             });
     
@@ -120,8 +134,7 @@ import Snack from './snack';
             });
         
             map.on('click', 'collection-boxes', function(e) {
-                console.log(e.features[0].properties)
-                emitter.emit('point-select', e.features[0].properties)
+                emitter.emit('point-select', e.features[0])
             });
         });
     });
