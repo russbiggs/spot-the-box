@@ -154,6 +154,14 @@ import Modal from './modal';
             }
         });
 
+        map.on('mouseenter', 'collection-boxes-surveyed', function() {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        map.on('mouseleave', 'collection-boxes-surveyed', function() {
+            map.getCanvas().style.cursor = '';
+        });
+
         map.on('mouseenter', 'collection-boxes', function() {
             map.getCanvas().style.cursor = 'pointer';
         });
