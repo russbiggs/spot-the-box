@@ -11,7 +11,14 @@
 }
 
 .btn-about {
-    padding:10px 5px;
+    background-image: url('/static/svg/info.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 10px;
 }
 
 
@@ -22,7 +29,14 @@
 }
 
 .btn-back {
-    padding:10px 5px;
+    background-image: url('/static/svg/chevron-left.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0px 10px;
 
     &--hidden{
         visibility: hidden;
