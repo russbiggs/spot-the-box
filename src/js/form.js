@@ -15,7 +15,7 @@ class Form {
 
 
     update(properties) {
-        const data = { outlet:properties.OUTLETID, lat: properties.LATITUDE,lng: properties.LATITUDE}
+        const data = { outlet:properties.OUTLETID, lat: properties.LATITUDE,lng: properties.LONGITUDE}
         this.removedBtn.data = data;
         this.presentBtn.data = data;
         this.collectionBoxInfo.innerHTML = `<p>Address:${properties.ADDR1}</p><p>Outlet ID:${properties.OUTLETID}</p>`
