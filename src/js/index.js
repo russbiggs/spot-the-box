@@ -9,13 +9,9 @@ import Modal from './modal';
 {
     const emitter = mitt();
 
-    let interval;
-
     let userLocation = false;
-    let mapboxControls;
 
-
-    const modal = new Modal(emitter);
+    new Modal(emitter);
     const form = new Form(emitter);
     const backBtn = new BackBtn(emitter);
 
@@ -42,10 +38,7 @@ import Modal from './modal';
     emitter.on('data-save', snack.showSnack);
     emitter.on('data-save', backBtn.hide)
     emitter.on('data-save', () => {
-        clearInterval(interval);
-        interval = setInterval(()=>{
-            refreshData();
-        }, 10000);
+        refreshData();
     });
     emitter.on('modal-close', getUserLocation);
 
@@ -64,7 +57,6 @@ import Modal from './modal';
         });
     }
 
-
     function getUserLocation(){
         if (!userLocation) {
             if (navigator.geolocation){
@@ -74,27 +66,25 @@ import Modal from './modal';
         userLocation = true;
     }
 
-    function addMapControls() {
-        map.addControl(
-            new MapboxGeocoder({
-                accessToken: mapboxgl.accessToken,
-                mapboxgl: mapboxgl
-            })
-        );
-    
-        map.addControl(new mapboxgl.NavigationControl());
-    
-        map.addControl(
-            new mapboxgl.GeolocateControl({
-                positionOptions: {
-                    enableHighAccuracy: true
-                },
-                trackUserLocation: true
-            })
-        );
-    }
 
-    addMapControls();
+    map.addControl(
+        new MapboxGeocoder({
+            accessToken: mapboxgl.accessToken,
+            mapboxgl: mapboxgl
+        })
+    );
+
+    map.addControl(new mapboxgl.NavigationControl());
+
+    map.addControl(
+        new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            trackUserLocation: true
+        })
+    );
+
 
     function refreshData() {
         fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
@@ -103,83 +93,81 @@ import Modal from './modal';
     }
 
         
-        map.on('load', function() {
-            mapboxControls = document.querySelector('.mapboxgl-control-container');
+    map.on('load', function() {
+        fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
 
-            fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
-
-                map.addSource('collection-box-surveyed-src', {
-                    type: 'geojson',
-                    data: data
-                });
-
-                const expression = [
-                    'match',
-                    ['get', 'status'],
-                    'removed',
-                    '#FF0000',
-                    'present',
-                    '#008000',
-                    '#004B87'
-                ]
-    
-                map.addLayer({
-                    'id': 'collection-boxes-surveyed',
-                    'type': 'circle',
-                    'source': 'collection-box-surveyed-src',
-                    paint: {
-                        'circle-color': expression,
-                        'circle-radius': {
-                            'base': 4,
-                            'stops': [
-                            [9, 4],
-                            [22, 180]
-                            ]
-                        }
-                    }
-                });
-
+            map.addSource('collection-box-surveyed-src', {
+                type: 'geojson',
+                data: data
             });
-            map.addSource('collection-box-src', {
-                type: 'vector',
-                url: 'mapbox://mikelmaron.3ws9y5k1'
-            });
+
+            const expression = [
+                'match',
+                ['get', 'status'],
+                'removed',
+                '#FF0000',
+                'present',
+                '#008000',
+                '#004B87'
+            ]
 
             map.addLayer({
-                'id': 'collection-boxes',
+                'id': 'collection-boxes-surveyed',
                 'type': 'circle',
-                'source': 'collection-box-src',
-                'source-layer': 'collection_box_trim_valid-0tbyft',
+                'source': 'collection-box-surveyed-src',
                 paint: {
-                    'circle-color': '#004B87',
+                    'circle-color': expression,
                     'circle-radius': {
                         'base': 4,
                         'stops': [
                         [9, 4],
+                        [12, 6],
+                        [16, 8],
+                        [18, 10],
                         [22, 180]
                         ]
                     }
                 }
             });
 
-
-    
-            map.on('mouseenter', 'collection-boxes', function() {
-                map.getCanvas().style.cursor = 'pointer';
-            });
-
-            map.on('mouseleave', 'collection-boxes', function() {
-                map.getCanvas().style.cursor = '';
-            });
-
-            map.on('click', 'collection-boxes', function(e) {
-                emitter.emit('point-select', e.features[0])
-            });
-
-            interval = setInterval(()=>{
-                refreshData();
-            }, 10000);
         });
+        map.addSource('collection-box-src', {
+            type: 'vector',
+            url: 'mapbox://mikelmaron.3ws9y5k1'
+        });
+
+        map.addLayer({
+            'id': 'collection-boxes',
+            'type': 'circle',
+            'source': 'collection-box-src',
+            'source-layer': 'collection_box_trim_valid-0tbyft',
+            paint: {
+                'circle-color': '#004B87',
+                'circle-radius': {
+                    'base': 4,
+                    'stops': [
+                    [9, 4],
+                    [12, 6],
+                    [16, 8],
+                    [18, 10],
+                    [22, 180]
+                    ]
+                }
+            }
+        });
+
+        map.on('mouseenter', 'collection-boxes', function() {
+            map.getCanvas().style.cursor = 'pointer';
+        });
+
+        map.on('mouseleave', 'collection-boxes', function() {
+            map.getCanvas().style.cursor = '';
+        });
+
+        map.on('click', 'collection-boxes', function(e) {
+            emitter.emit('point-select', e.features[0])
+        });
+    });
 
 
     const mediaSupported = 'mediaDevices' in navigator;

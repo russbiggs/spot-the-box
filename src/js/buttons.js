@@ -11,7 +11,6 @@ class BackBtn {
     onClick() {
         this.emitter.emit('show-map');
         this.hide();
-       
     }
 
     show() {

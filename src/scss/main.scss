@@ -33,7 +33,7 @@ body {
     margin:0px 5px;
     padding:0;
     line-height: $header-height;
-    font-size: 12px;
+    font-size: 18px;
     color:white;
 }
 
@@ -47,11 +47,22 @@ main {
     flex-direction: column;
     height: calc(100vh - #{$header-height});
     width: 100vw;
+    margin: 10px;
     overflow-y: auto;
+}
+
+.collection-box-info {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin: 0px;
+    }
 }
 
 .data-entry-container--hidden {
     display: none;
+
 }
 
 .overview-container {

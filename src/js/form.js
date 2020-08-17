@@ -23,7 +23,7 @@ class Form {
         }
         this.removedBtn.data = data;
         this.presentBtn.data = data;
-        this.collectionBoxInfo.innerHTML = `<p>Address:${properties.ADDR1}</p><p>Outlet ID:${properties.OUTLETID}</p>`
+        this.collectionBoxInfo.innerHTML = `<p>Outlet ID: ${properties.OUTLETID}</p><p>Type: ${properties.BUSNAME}</p><p>Address: ${properties.ADDR1}</p>`
     }
 
     show(data) {
@@ -49,11 +49,15 @@ class RemovedBtn {
     }
 
     onClick() {
+        const active = document.querySelector('.btn-status--active');
+        if (active) {
+            active.classList.remove('btn-status--active');
+        }
+        this.elem.classList.add('btn-status--active')
         const data = {
             ...this.data,
             status: 'removed'
         }
-        console.log(data)
         this.emitter.emit('data-update', data)
     }
 
@@ -70,6 +74,11 @@ class PresentBtn {
     }
 
     onClick() {
+        const active = document.querySelector('.btn-status--active');
+        if (active) {
+            active.classList.remove('btn-status--active');
+        }
+        this.elem.classList.add('btn-status--active')
         const data = {
             ...this.data,
             status: 'present'

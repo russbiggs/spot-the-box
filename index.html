@@ -23,19 +23,22 @@
         </div>
         <div class="data-entry-container data-entry-container--hidden js-data-entry-container ">
             <div class="js-collection-box-info collection-box-info"></div>
+            <br>
             <div class="btn-row">
-                <button class="btn btn-removed js-btn-removed">Removed</button>
-                <button class="btn btn-present js-btn-present">Present</button>   
+                <p>Is this collection box still here or has it been removed?</p>
+                <button class="btn btn-removed js-btn-removed"><span>Removed</span></button>
+                <button class="btn btn-present js-btn-present"><span>Present</span></button>
+                <br>   
+                <button class="btn btn-photo btn-photo--hidden js-btn-photo" disabled>Take a photo</button>
+                <button class="btn btn-save js-btn-save" disabled>Save</button>
             </div>
-            <button class="btn btn-photo btn-photo--hidden js-btn-photo" disabled>Take a photo</button>
+            
             <div class="media-row--hidden">
                 <video class="video-player js-video-player" controls autoplay></video>
                 <canvas class="canvas js-canvas"></canvas>
                 <button class="btn btn-capture js-btn-camera">Capture</button>
             </div>
-            <button class="btn btn-save js-btn-save" disabled>Save</button>
         </div>
-
     </main>
     <div class="js-modal modal modal--visible">
         <div class="js-modal__body modal__body modal__body--visible">
