@@ -85,14 +85,12 @@ import Modal from './modal';
         })
     );
 
-
     function refreshData() {
         fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
             map.getSource('collection-box-surveyed-src').setData(data);
         })
     }
-
-        
+  
     map.on('load', function() {
         fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
 
@@ -165,10 +163,39 @@ import Modal from './modal';
         });
 
         map.on('click', 'collection-boxes', function(e) {
-            emitter.emit('point-select', e.features[0])
+            
         });
-    });
 
+
+
+        map.on('click', function(e) {
+            let f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes-surveyed'] });
+            if (f.length) {
+                const coordinates = f[0].geometry.coordinates.slice();
+                const status = f[0].properties.status;
+                const outlet = f[0].properties.outlet;
+
+                
+                while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
+                    coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
+                }
+                
+                new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`<strong>Outlet ID: ${outlet}</strong><p>Status: ${status}</p>`)
+                    .addTo(map);
+
+                return;
+            }
+            f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes'] });
+            if (f.length) {
+                emitter.emit('point-select', f[0]);
+                return;
+            } 
+            return;
+        });
+
+    });
 
     const mediaSupported = 'mediaDevices' in navigator;
     if (mediaSupported) {
