@@ -26,7 +26,9 @@ body {
     height: $header-height;
     background-color:$postal-blue;
     display: flex;
+    display: -webkit-flex;
     justify-content: space-between;
+    -webkit-justify-content: space-between;
 }
 
 .title {
