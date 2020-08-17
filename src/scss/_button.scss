@@ -14,6 +14,13 @@
     padding:10px 5px;
 }
 
+
+.btn-status--active {
+    span::after {
+        content: '\0000a0\2713';
+    }
+}
+
 .btn-back {
     padding:10px 5px;
 
@@ -28,6 +35,12 @@
 
 .btn-present {
     background-color: green;
+}
+
+.btn-save:disabled {
+    background-color: #999;
+    cursor: not-allowed;
+
 }
 
 .btn-photo {

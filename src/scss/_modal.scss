@@ -8,6 +8,7 @@
     position: fixed;
     align-items: center;
     justify-content: center;
+    z-index: 999;
     width: 100vw;
     height: 100vh;
   }
@@ -18,7 +19,6 @@
     width: 100%;
     height: 100%;
     opacity: 0;
-    z-index: 999;
     text-align: center;
     transition: opacity 0.3s ease-out;
   }
@@ -59,7 +59,7 @@
   
   .modal-continue-btn {
     margin: 0 auto;
-    width: 100px;
+    width: 150px;
     position: relative;
     margin-top: 20px;
     padding: 10px;
