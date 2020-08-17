@@ -14,10 +14,11 @@ class Form {
     }
 
 
-    update(data) {
-        this.removedBtn.outletId = data.OUTLETID;
-        this.presentBtn.outletId = data.OUTLETID;
-        this.collectionBoxInfo.innerHTML = `<p>Address:${data.ADDR1}</p><p>Outlet ID:${data.OUTLETID}</p>`
+    update(properties) {
+        const data = { outlet:properties.OUTLETID, lat: properties.LATITUDE,lng: properties.LATITUDE}
+        this.removedBtn.data = data;
+        this.presentBtn.data = data;
+        this.collectionBoxInfo.innerHTML = `<p>Address:${properties.ADDR1}</p><p>Outlet ID:${properties.OUTLETID}</p>`
     }
 
     show(data) {
@@ -34,7 +35,7 @@ class Form {
 
 class RemovedBtn {
     constructor(emitter) {
-        this.outletId;
+        this.data;
         this.emitter = emitter;
         this.elem = document.querySelector('.js-btn-removed');
         this.onClick = this.onClick.bind(this);
@@ -44,9 +45,10 @@ class RemovedBtn {
 
     onClick() {
         const data = {
-            outletId : this.outletId,
+            ...this.data,
             status: 'removed'
         }
+        console.log(data)
         this.emitter.emit('data-update', data)
     }
 
@@ -54,7 +56,7 @@ class RemovedBtn {
 
 class PresentBtn {
     constructor(emitter) {
-        this.outletId;
+        this.data;
         this.emitter = emitter;
         this.elem = document.querySelector('.js-btn-present');
         this.onClick = this.onClick.bind(this);
@@ -64,9 +66,10 @@ class PresentBtn {
 
     onClick() {
         const data = {
-            outlet : this.outletId,
+            ...this.data,
             status: 'present'
         }
+        console.log(data)
         this.emitter.emit('data-update', data);
     }
 }

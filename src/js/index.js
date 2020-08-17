@@ -60,12 +60,21 @@ import Snack from './snack';
         })
     );
 
-    map.on('load', function() {
+
+    fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
+        
+        map.on('load', function() {
+            map.addSource('collection-box-surveyed-src', {
+                type: 'geojson',
+                data: data
+            });
+
+
             map.addSource('collection-box-src', {
                 type: 'vector',
                 url: 'mapbox://mikelmaron.3ws9y5k1'
             });
-        
+
             map.addLayer({
                 'id': 'collection-boxes',
                 'type': 'circle',
@@ -77,6 +86,32 @@ import Snack from './snack';
                 }
             });
 
+            const expression = [
+                'match',
+                ['get', 'status'],
+                'removed',
+                '#FF0000',
+                'present',
+                '#008000',
+                '#004B87'
+            ]
+
+            map.addLayer({
+                'id': 'collection-boxes-surveyed',
+                'type': 'circle',
+                'source': 'collection-box-surveyed-src',
+                paint: {
+                    'circle-color': expression,
+                    'circle-radius': {
+                        'base': 1.75,
+                        'stops': [
+                        [12, 2],
+                        [22, 180]
+                        ]
+                        }
+                }
+            });
+    
             map.on('mouseenter', 'collection-boxes', function() {
                 map.getCanvas().style.cursor = 'pointer';
             });
@@ -85,9 +120,11 @@ import Snack from './snack';
             });
         
             map.on('click', 'collection-boxes', function(e) {
+                console.log(e.features[0].properties)
                 emitter.emit('point-select', e.features[0].properties)
             });
         });
+    });
 
     const mediaSupported = 'mediaDevices' in navigator;
     if (mediaSupported) {

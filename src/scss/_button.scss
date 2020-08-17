@@ -16,10 +16,10 @@
 
 .btn-back {
     padding:10px 5px;
-}
 
-.btn-back--hidden{
-    visibility: hidden;
+    &--hidden{
+        visibility: hidden;
+    }
 }
 
 .btn-removed {
@@ -28,4 +28,10 @@
 
 .btn-present {
     background-color: green;
+}
+
+.btn-photo {
+    &--hidden {
+        display: none;
+    }
 }
