@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "build": "rm -rf dist && mkdir dist && webpack"
+    "clean": "rm -rf dist && mkdir dist",
+    "build-css": "node-sass --include-path scss src/scss/main.scss  dist/style.css --output-style compressed",
+    "build-js": " webpack",
+    "build": "yarn run clean && yarn run build-css && yarn run build-js"
   },
   "license": "MIT",
   "dependencies": {
@@ -14,6 +17,7 @@
     "@babel/core": "^7.9.0",
     "@babel/preset-env": "^7.9.5",
     "babel-loader": "^8.1.0",
+    "node-sass": "^4.14.1",
     "terser-webpack-plugin": "^2.3.5",
     "webpack": "^4.42.1",
     "webpack-cli": "^3.3.11"

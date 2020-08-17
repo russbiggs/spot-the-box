@@ -1,0 +1,37 @@
+@import 'variables';
+
+.btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding:10px 20px;
+    margin: 10px;
+    background-color: $postal-blue;
+    color:white;
+}
+
+.btn-menu {
+    padding:10px 5px;
+}
+
+.btn-back {
+    padding:10px 5px;
+
+    &--hidden{
+        visibility: hidden;
+    }
+}
+
+.btn-removed {
+    background-color:red;
+}
+
+.btn-present {
+    background-color: green;
+}
+
+.btn-photo {
+    &--hidden {
+        display: none;
+    }
+}
