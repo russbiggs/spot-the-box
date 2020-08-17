@@ -21,6 +21,10 @@ class Form {
             lat: feature.geometry.coordinates[1], 
             lng: feature.geometry.coordinates[0]
         }
+        const active = document.querySelector('.btn-status--active');
+        if (active) {
+            active.classList.remove('btn-status--active');
+        }
         this.removedBtn.data = data;
         this.presentBtn.data = data;
         this.collectionBoxInfo.innerHTML = `<p>Outlet ID: ${properties.OUTLETID}</p><p>Type: ${properties.BUSNAME}</p><p>Address: ${properties.ADDR1}</p>`
