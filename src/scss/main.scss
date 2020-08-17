@@ -2,11 +2,12 @@
 @import 'resets';
 @import 'button';
 @import 'snack';
-@import 'variables';
+@import 'modal';
 
 
 * {
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body,
@@ -78,5 +79,3 @@ main {
     height: 100%;
     position: relative;
 }
-
-
