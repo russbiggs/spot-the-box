@@ -56,6 +56,7 @@ main {
 .collection-box-info {
     display: flex;
     flex-direction: column;
+    align-self: center;
 
     p {
         margin: 0px;
