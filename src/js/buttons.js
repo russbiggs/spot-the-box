@@ -19,7 +19,6 @@ class BackBtn {
 
     hide() {
         this.elem.classList.add('btn-back--hidden');
-        document.querySelector('.js-data-entry-container').classList.add('data-entry-container--hidden');
     }
 }
 
