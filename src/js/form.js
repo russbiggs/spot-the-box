@@ -36,10 +36,11 @@ class Form {
     }
 
     hide() {
-        this.containerElem.classList.add('data-entry-container--hidden');
+        this.containerElem.classList.remove('data-entry-container--hidden');
     }
 
 }
+
 
 class RemovedBtn {
     constructor(emitter) {
