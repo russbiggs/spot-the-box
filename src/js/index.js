@@ -92,7 +92,7 @@ import Modal from './modal';
     }
   
     map.on('load', function() {
-        fetch('https://spot-the-box.s3.amazonaws.com/reports.json').then(res => res.json()).then(data=> {
+        fetch('https://khab7rvd6c.execute-api.us-east-1.amazonaws.com/dev/mailbox').then(res => res.json()).then(data=> {
 
             map.addSource('collection-box-surveyed-src', {
                 type: 'geojson',
