@@ -4,7 +4,7 @@ import os
 from mailbox import decimalencoder
 import boto3
 dynamodb = boto3.resource('dynamodb')
-
+s3 = boto3.client('s3')
 
 def list(event, context):
     table = dynamodb.Table(os.environ['DYNAMODB_TABLE'])
@@ -43,7 +43,15 @@ def list(event, context):
       }
       geojson['features'].append(feature)
 
-      
+    geojson_string = json.dumps(geojson, cls=decimalencoder.DecimalEncoder)
+
+    s3.put_object(
+      Bucket=os.environ['BUCKET'],
+      Key='reports.json',
+      Body=geojson_string,
+      ACL='public-read'
+    )
+
     # create a response
     response = {
         "statusCode": 200,
@@ -51,7 +59,7 @@ def list(event, context):
           "Access-Control-Allow-Origin": "*",
           "Access-Control-Allow-Credentials": True,
         },
-        "body": json.dumps(geojson, cls=decimalencoder.DecimalEncoder)
+        "body": geojson_string
     }
 
     return response

@@ -4,6 +4,8 @@ service: serverless-rest-api-with-dynamodb
 
 frameworkVersion: ">=1.1.0 <2.0.0"
 
+custom:
+  bucket: spot-the-box
 provider:
   name: aws
   runtime: python3.8
@@ -19,6 +21,11 @@ provider:
         - dynamodb:UpdateItem
         - dynamodb:DeleteItem
       Resource: "arn:aws:dynamodb:${opt:region, self:provider.region}:*:table/${self:provider.environment.DYNAMODB_TABLE}"
+    - Effect: Allow
+      Action:
+        - s3:PutObject
+        - s3:PutObjectAcl
+      Resource: "arn:aws:s3:::${self:custom.bucket}/*"
 
 functions:
   create:
@@ -36,6 +43,8 @@ functions:
           path: mailbox
           method: get
           cors: true
+    environment:
+      BUCKET: ${self:custom.bucket}
 
 resources:
   Resources:
