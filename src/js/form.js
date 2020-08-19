@@ -2,9 +2,12 @@ class Form {
     constructor(emitter) {
         this.emitter = emitter;
         this.containerElem = document.querySelector('.js-data-entry-container')
-        this.removedBtn = new RemovedBtn(emitter);
-        this.presentBtn = new PresentBtn(emitter);
-        this.inoperableBtn = new InoperableBtn(emitter);
+        const removedBtnElem = document.querySelector('.js-btn-removed');
+        this.removedBtn = new StatusBtn(removedBtnElem, 'removed', emitter);
+        const presentBtnElem = document.querySelector('.js-btn-present');
+        this.presentBtn = new StatusBtn(presentBtnElem, 'present', emitter);
+        const inoperableBtnElem = document.querySelector('.js-btn-inoperable');
+        this.inoperableBtn = new StatusBtn(inoperableBtnElem, 'inoperable', emitter);
         this.saveBtn = new SaveBtn(emitter)
         this.collectionBoxInfo = document.querySelector('.js-collection-box-info');
 
@@ -13,7 +16,6 @@ class Form {
         this.update = this.update.bind(this);
         
     }
-
 
     update(feature) {
         const properties = feature.properties;
@@ -47,11 +49,12 @@ class Form {
 
 }
 
-class RemovedBtn {
-    constructor(emitter) {
+class StatusBtn {
+    constructor(elem, status, emitter) {
         this.data;
         this.emitter = emitter;
-        this.elem = document.querySelector('.js-btn-removed');
+        this.status = status;
+        this.elem = elem;
         this.onClick = this.onClick.bind(this);
 
         this.elem.addEventListener('click', this.onClick);
@@ -65,60 +68,11 @@ class RemovedBtn {
         this.elem.classList.add('btn-status--active')
         const data = {
             ...this.data,
-            status: 'removed'
+            status: this.status
         }
         this.emitter.emit('data-update', data)
     }
 }
-
-class PresentBtn {
-    constructor(emitter) {
-        this.data;
-        this.emitter = emitter;
-        this.elem = document.querySelector('.js-btn-present');
-        this.onClick = this.onClick.bind(this);
-
-        this.elem.addEventListener('click', this.onClick);
-    }
-
-    onClick() {
-        const active = document.querySelector('.btn-status--active');
-        if (active) {
-            active.classList.remove('btn-status--active');
-        }
-        this.elem.classList.add('btn-status--active')
-        const data = {
-            ...this.data,
-            status: 'present'
-        }
-        this.emitter.emit('data-update', data);
-    }
-}
-
-class InoperableBtn {
-    constructor(emitter) {
-        this.data;
-        this.emitter = emitter;
-        this.elem = document.querySelector('.js-btn-inoperable');
-        this.onClick = this.onClick.bind(this);
-
-        this.elem.addEventListener('click', this.onClick);
-    }
-
-    onClick() {
-        const active = document.querySelector('.btn-status--active');
-        if (active) {
-            active.classList.remove('btn-status--active');
-        }
-        this.elem.classList.add('btn-status--active')
-        const data = {
-            ...this.data,
-            status: 'inoperable'
-        }
-        this.emitter.emit('data-update', data);
-    }
-}
-
 
 class SaveBtn {
     constructor(emitter) {
