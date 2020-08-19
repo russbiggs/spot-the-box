@@ -11,7 +11,7 @@ import Modal from './modal';
 
     let userLocation = false;
 
-    new Modal(emitter);
+    const modal = new Modal(emitter);
     const form = new Form(emitter);
     const backBtn = new BackBtn(emitter);
 
@@ -201,6 +201,21 @@ import Modal from './modal';
         });
 
     });
+
+
+    let cookie = false;
+    const cookies = document.cookie.split('; ');
+    for (const c of cookies) {
+      if (c == 'visited=True') {
+        cookie = true;
+      }
+    }
+  if (!cookie) {
+    modal.open();
+    document.cookie = `visited=True; expires=Fri, 31 Dec 9999 23:59:59 GMT`;
+  } else {
+      getUserLocation();
+  }
 
     const mediaSupported = 'mediaDevices' in navigator;
     if (mediaSupported) {
