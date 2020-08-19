@@ -178,17 +178,16 @@ import Modal from './modal';
                 const status = feature.properties.status;
                 const outlet = feature.properties.outlet;
                 const createdAt = parseFloat(feature.properties.createdAt);
-                const d = new Date(createdAt * 1000); //
+                const d = new Date(createdAt * 1000); // python time in seconds, multiply by 1000 for milliseconds
                 const dateSurveyed = `${(d.getMonth()+1)}-${d.getDate()}-${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`;
 
-                
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
                 }
                 
                 new mapboxgl.Popup()
                     .setLngLat(coordinates)
-                    .setHTML(`<strong>Outlet ID: ${outlet}</strong><p>Status: ${status}</p><p>Surveyed on:${dateSurveyed}</p>`)
+                    .setHTML(`<strong>Outlet ID: ${outlet}</strong><p>Status: ${status}</p><p>Surveyed on: ${dateSurveyed}</p>`)
                     .addTo(map);
 
                 return;
