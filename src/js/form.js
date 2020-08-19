@@ -26,6 +26,11 @@ class Form {
         if (active) {
             active.classList.remove('btn-status--active');
         }
+        const lobbyNote = document.querySelector('.collection-box-lobby-note');
+        lobbyNote.classList.add('collection-box-lobby-note--hidden')
+        if (properties.BUSNAME == 'USPS COLLECTION BOX - PO LOBBY') {
+            lobbyNote.classList.remove('collection-box-lobby-note--hidden');
+        }
         this.removedBtn.data = data;
         this.presentBtn.data = data;
         this.collectionBoxInfo.innerHTML = `<p>Outlet ID: ${properties.OUTLETID}</p><p>Type: ${properties.BUSNAME}</p><p>Address: ${properties.ADDR1}</p>`

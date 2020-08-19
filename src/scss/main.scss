@@ -54,6 +54,21 @@ main {
     overflow-y: auto;
 }
 
+.collection-box-lobby-note {
+    margin: 10px 0;
+    display: flex;
+    max-width: 300px;
+    align-self: center;
+
+    &--hidden {
+        display: none;
+    }
+
+    i {
+        font-size: 12px;
+    }
+}
+
 .collection-box-info {
     display: flex;
     flex-direction: column;
