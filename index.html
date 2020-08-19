@@ -29,14 +29,26 @@
     <main>
         <div class="overview-container js-overview-container">
             <div class="overview-map js-overview-map" id="map"></div>
+            <div id="box-legend" class="legend js-legend">
+                <h4>Legend</h4>
+                <div><span class="legend-item-box"></span>Unsurveyed box</div>
+                <div><span class="legend-item-present"></span>Present</div>
+                <div><span class="legend-item-removed"></span>Removed</div>
+                <div><span class="legend-item-inoperable"></span>Out of order/Locked</div>
+            </div>
         </div>
         <div class="data-entry-container data-entry-container--hidden js-data-entry-container ">
             <div class="js-collection-box-info collection-box-info"></div>
+            <div class="js-collection-box-lobby-note collection-box-lobby-note">
+                <i>Note: This collection box is located inside the Post Office Lobby. Check inside the building before marking its status.
+                </i>
+            </div>
             <br>
             <div class="btn-row">
                 <p>Is this collection box still here or has it been removed?</p>
                 <button class="btn btn-removed js-btn-removed"><span>Removed</span></button>
                 <button class="btn btn-present js-btn-present"><span>Present</span></button>
+                <button class="btn btn-inoperable js-btn-inoperable"><span>Out of order/Locked</span></button>
                 <br>   
                 <button class="btn btn-photo btn-photo--hidden js-btn-photo" disabled>Take a photo</button>
                 <button class="btn btn-save js-btn-save" disabled>Save</button>

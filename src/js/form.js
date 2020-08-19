@@ -4,6 +4,7 @@ class Form {
         this.containerElem = document.querySelector('.js-data-entry-container')
         this.removedBtn = new RemovedBtn(emitter);
         this.presentBtn = new PresentBtn(emitter);
+        this.inoperableBtn = new InoperableBtn(emitter);
         this.saveBtn = new SaveBtn(emitter)
         this.collectionBoxInfo = document.querySelector('.js-collection-box-info');
 
@@ -24,6 +25,11 @@ class Form {
         const active = document.querySelector('.btn-status--active');
         if (active) {
             active.classList.remove('btn-status--active');
+        }
+        const lobbyNote = document.querySelector('.collection-box-lobby-note');
+        lobbyNote.classList.add('collection-box-lobby-note--hidden')
+        if (properties.BUSNAME == 'USPS COLLECTION BOX - PO LOBBY') {
+            lobbyNote.classList.remove('collection-box-lobby-note--hidden');
         }
         this.removedBtn.data = data;
         this.presentBtn.data = data;
@@ -63,7 +69,6 @@ class RemovedBtn {
         }
         this.emitter.emit('data-update', data)
     }
-
 }
 
 class PresentBtn {
@@ -85,6 +90,30 @@ class PresentBtn {
         const data = {
             ...this.data,
             status: 'present'
+        }
+        this.emitter.emit('data-update', data);
+    }
+}
+
+class InoperableBtn {
+    constructor(emitter) {
+        this.data;
+        this.emitter = emitter;
+        this.elem = document.querySelector('.js-btn-inoperable');
+        this.onClick = this.onClick.bind(this);
+
+        this.elem.addEventListener('click', this.onClick);
+    }
+
+    onClick() {
+        const active = document.querySelector('.btn-status--active');
+        if (active) {
+            active.classList.remove('btn-status--active');
+        }
+        this.elem.classList.add('btn-status--active')
+        const data = {
+            ...this.data,
+            status: 'inoperable'
         }
         this.emitter.emit('data-update', data);
     }

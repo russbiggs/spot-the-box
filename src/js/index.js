@@ -118,11 +118,11 @@ import Modal from './modal';
                     'circle-radius': {
                         'base': 4,
                         'stops': [
-                        [9, 4],
-                        [12, 6],
-                        [16, 8],
-                        [18, 10],
-                        [22, 180]
+                            [9, 4],
+                            [12, 6],
+                            [16, 15],
+                            [18, 30],
+                            [22, 180]
                         ]
                     }
                 }
@@ -144,11 +144,11 @@ import Modal from './modal';
                 'circle-radius': {
                     'base': 4,
                     'stops': [
-                    [9, 4],
-                    [12, 6],
-                    [16, 8],
-                    [18, 10],
-                    [22, 180]
+                        [9, 4],
+                        [12, 6],
+                        [16, 15],
+                        [18, 30],
+                        [22, 180]
                     ]
                 }
             }
@@ -170,18 +170,16 @@ import Modal from './modal';
             map.getCanvas().style.cursor = '';
         });
 
-        map.on('click', 'collection-boxes', function(e) {
-            
-        });
-
-
-
         map.on('click', function(e) {
             let f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes-surveyed'] });
             if (f.length) {
-                const coordinates = f[0].geometry.coordinates.slice();
-                const status = f[0].properties.status;
-                const outlet = f[0].properties.outlet;
+                const feature = f[0]
+                const coordinates = feature.geometry.coordinates.slice();
+                const status = feature.properties.status;
+                const outlet = feature.properties.outlet;
+                const createdAt = parseFloat(feature.properties.createdAt);
+                const d = new Date(createdAt * 1000); //
+                const dateSurveyed = `${(d.getMonth()+1)}-${d.getDate()}-${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`;
 
                 
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
@@ -190,7 +188,7 @@ import Modal from './modal';
                 
                 new mapboxgl.Popup()
                     .setLngLat(coordinates)
-                    .setHTML(`<strong>Outlet ID: ${outlet}</strong><p>Status: ${status}</p>`)
+                    .setHTML(`<strong>Outlet ID: ${outlet}</strong><p>Status: ${status}</p><p>Surveyed on:${dateSurveyed}</p>`)
                     .addTo(map);
 
                 return;
