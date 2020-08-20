@@ -45,7 +45,7 @@ import Modal from './modal';
     mapboxgl.accessToken = 'pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNrZHg2am55ejE3aHYyeWtqOGtocjh4ejgifQ.Qg_LH8LUNchJZBPsqDme9g';
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/dark-v10',
+        style: 'mapbox://styles/mapbox/streets-v11',
         center: [-98.5795,39.8283] ,
         zoom: 5 ,
         hash: true
@@ -106,7 +106,7 @@ import Modal from './modal';
                 'removed',
                 '#FF0000',
                 'present',
-                '#008000',
+                '#23d100',
                 '#004B87'
             ]
 
@@ -116,16 +116,15 @@ import Modal from './modal';
                 'source': 'collection-box-surveyed-src',
                 paint: {
                     'circle-color': expression,
-                    'circle-radius': {
-                        'base': 4,
-                        'stops': [
-                            [9, 4],
-                            [12, 6],
-                            [16, 15],
-                            [18, 30],
-                            [22, 180]
-                        ]
-                    }
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        4, 1,
+                        9, 3,
+                        14, 6,
+                        18, 30
+                    ]
                 },
                 layout: {
                     'circle-sort-key': [
@@ -152,27 +151,34 @@ import Modal from './modal';
             'source': 'collection-box-src',
             'source-layer': 'collection_box_trim_valid-0tbyft',
             paint: {
-                'circle-color': '#004B87',
-                'circle-opacity': [
-                    'interpolate',
-                    ['linear'],
-                    ['zoom'],
-                    2,
-                    0.3,
-                    14,
-                    0.9
-                    ],
-                'circle-radius': {
-                    'base': 4,
-                    'stops': [
-                        [2, 2],
-                        [9, 4],
-                        [12, 6],
-                        [16, 15],
-                        [18, 30],
-                        [22, 180]
-                    ]
-                }
+                'circle-stroke-color': '#004B87',
+                'circle-stroke-width': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4, 0.1,
+                    9, 0.5,
+                    14, 1,
+                    16, 4
+                ],
+                'circle-stroke-opacity': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4, 0.6,
+                    7, 0.8,
+                    14, 0.9
+                ],
+                'circle-opacity': 0,
+                'circle-radius': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4, 1,
+                    9, 3,
+                    14, 6,
+                    18, 30
+                ]
             }
         });
 
