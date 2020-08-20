@@ -45,7 +45,7 @@ import Modal from './modal';
     mapboxgl.accessToken = 'pk.eyJ1IjoicnVzc2JpZ2dzIiwiYSI6ImNrZHg2am55ejE3aHYyeWtqOGtocjh4ejgifQ.Qg_LH8LUNchJZBPsqDme9g';
     const map = new mapboxgl.Map({
         container: 'map',
-        style: 'mapbox://styles/mapbox/streets-v11',
+        style: 'mapbox://styles/mapbox/dark-v10',
         center: [-98.5795,39.8283] ,
         zoom: 5 ,
         hash: true
@@ -126,6 +126,17 @@ import Modal from './modal';
                             [22, 180]
                         ]
                     }
+                },
+                layout: {
+                    'circle-sort-key': [
+                        'match',
+                        ['get', 'status'],
+                        'removed',
+                        2,
+                        'present',
+                        1,
+                        0
+                    ]
                 }
             });
 
@@ -142,9 +153,19 @@ import Modal from './modal';
             'source-layer': 'collection_box_trim_valid-0tbyft',
             paint: {
                 'circle-color': '#004B87',
+                'circle-opacity': [
+                    'interpolate',
+                    ['linear'],
+                    ['zoom'],
+                    2,
+                    0.3,
+                    14,
+                    0.9
+                    ],
                 'circle-radius': {
                     'base': 4,
                     'stops': [
+                        [2, 2],
                         [9, 4],
                         [12, 6],
                         [16, 15],
