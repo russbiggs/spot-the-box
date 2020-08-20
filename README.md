@@ -1,6 +1,5 @@
 # Spot the Box
-
-<img width="180" alt="Screen Shot 2020-08-19 at 10 59 35 AM" src="https://user-images.githubusercontent.com/8487728/90667333-de480180-e20b-11ea-9aed-0cf549b61634.png">
+<img width="180" alt="Screen Shot 2020-08-19 at 8 36 15 PM" src="https://user-images.githubusercontent.com/8487728/90710467-b4b6c680-e25b-11ea-8f97-dad698f7d963.png">
 
 ## About
 
