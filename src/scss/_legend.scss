@@ -25,11 +25,12 @@
             width: 10px;
 
             &.legend-item-box {
-                background-color: $postal-blue;   
+                border: 1px solid $postal-blue; 
+                background-color: transparent;   
             }
 
             &.legend-item-present {
-                background-color: green;   
+                background-color: #23d100;   
             }
 
             &.legend-item-removed {
