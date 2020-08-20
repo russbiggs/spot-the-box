@@ -6,6 +6,16 @@
 @import 'legend';
 
 
+@font-face {
+    font-family: 'Postmaster';
+    src:url('/static/font/Postmaster.ttf.woff') format('woff'),
+        url('/static/font/Postmaster.ttf.svg#Postmaster') format('svg'),
+        url('/static/font/Postmaster.ttf.eot'),
+        url('/static/font/Postmaster.ttf.eot?#iefix') format('embedded-opentype'); 
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
@@ -33,6 +43,7 @@ body {
 }
 
 .title {
+    font-family: 'Postmaster';
     margin:0px 5px;
     padding:0;
     line-height: $header-height;
