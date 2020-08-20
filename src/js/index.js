@@ -47,7 +47,8 @@ import Modal from './modal';
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-98.5795,39.8283] ,
-        zoom: 5
+        zoom: 5 ,
+        hash: true
     });
 
     function setMapLocation(position) {
