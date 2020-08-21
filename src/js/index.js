@@ -1,10 +1,16 @@
 
 import mitt from 'mitt';
 
- import Form from './form';
+import Form from './form';
 import {BackBtn} from './buttons';
 import Snack from './snack';
 import Modal from './modal';
+
+const colors = {
+    present: '#004B87',
+    removed: '#d7191c',
+    inoperable: '#fdae61'
+}
 
 {
     const emitter = mitt();
@@ -107,7 +113,7 @@ import Modal from './modal';
             'source': 'collection-box-src',
             'source-layer': 'collection_box_trim_valid-0tbyft',
             paint: {
-                'circle-stroke-color': '#004B87',
+                'circle-stroke-color': colors.present,
                 'circle-stroke-width': [
                     "interpolate",
                     ["linear"],
@@ -130,8 +136,7 @@ import Modal from './modal';
                     "interpolate",
                     ["linear"],
                     ["zoom"],
-                    4, 1,
-                    9, 3,
+                    10, 1,
                     14, 6,
                     18, 30
                 ]
@@ -151,10 +156,10 @@ import Modal from './modal';
                 'match',
                 ['get', 'status'],
                 'removed',
-                '#FF0000',
-                'present',
-                '#23d100',
-                '#004B87'
+                colors.removed,
+                'inoperable',
+                colors.inoperable,
+                colors.present
             ]
 
             map.addLayer({

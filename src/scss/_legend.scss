@@ -30,15 +30,15 @@
             }
 
             &.legend-item-present {
-                background-color: #23d100;   
+                background-color: $postal-blue;   
             }
 
             &.legend-item-removed {
-                background-color: red;   
+                background-color: #d7191c;   
             }
 
             &.legend-item-inoperable {
-                background-color: darkorange;   
+                background-color: #fdae61;   
             }
         }
     }
