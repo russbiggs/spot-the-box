@@ -1,10 +1,16 @@
 
 import mitt from 'mitt';
 
- import Form from './form';
+import Form from './form';
 import {BackBtn} from './buttons';
 import Snack from './snack';
 import Modal from './modal';
+
+const colors = {
+    present: '#004B87',
+    removed: '#d7191c',
+    inoperable: '#fdae61'
+}
 
 {
     const emitter = mitt();
@@ -47,7 +53,8 @@ import Modal from './modal';
         container: 'map',
         style: 'mapbox://styles/mapbox/streets-v11',
         center: [-98.5795,39.8283] ,
-        zoom: 5
+        zoom: 5 ,
+        hash: true
     });
 
     function setMapLocation(position) {
@@ -92,43 +99,9 @@ import Modal from './modal';
     }
   
     map.on('load', function() {
-        fetch('https://spot-the-box.s3.amazonaws.com/reports.json').then(res => res.json()).then(data=> {
 
-            map.addSource('collection-box-surveyed-src', {
-                type: 'geojson',
-                data: data
-            });
+        // USPS postbox locations
 
-            const expression = [
-                'match',
-                ['get', 'status'],
-                'removed',
-                '#FF0000',
-                'present',
-                '#008000',
-                '#004B87'
-            ]
-
-            map.addLayer({
-                'id': 'collection-boxes-surveyed',
-                'type': 'circle',
-                'source': 'collection-box-surveyed-src',
-                paint: {
-                    'circle-color': expression,
-                    'circle-radius': {
-                        'base': 4,
-                        'stops': [
-                            [9, 4],
-                            [12, 6],
-                            [16, 15],
-                            [18, 30],
-                            [22, 180]
-                        ]
-                    }
-                }
-            });
-
-        });
         map.addSource('collection-box-src', {
             type: 'vector',
             url: 'mapbox://mikelmaron.3ws9y5k1'
@@ -140,19 +113,85 @@ import Modal from './modal';
             'source': 'collection-box-src',
             'source-layer': 'collection_box_trim_valid-0tbyft',
             paint: {
-                'circle-color': '#004B87',
-                'circle-radius': {
-                    'base': 4,
-                    'stops': [
-                        [9, 4],
-                        [12, 6],
-                        [16, 15],
-                        [18, 30],
-                        [22, 180]
-                    ]
-                }
+                'circle-stroke-color': colors.present,
+                'circle-stroke-width': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4, 0.1,
+                    9, 0.5,
+                    14, 1,
+                    16, 4
+                ],
+                'circle-stroke-opacity': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    4, 0.6,
+                    7, 0.8,
+                    14, 0.9
+                ],
+                'circle-opacity': 0,
+                'circle-radius': [
+                    "interpolate",
+                    ["linear"],
+                    ["zoom"],
+                    10, 1,
+                    14, 6,
+                    18, 30
+                ]
             }
         });
+
+        // Surveyed postbox locations
+
+        fetch('https://spot-the-box.s3.amazonaws.com/reports.json').then(res => res.json()).then(data=> {
+
+            map.addSource('collection-box-surveyed-src', {
+                type: 'geojson',
+                data: data
+            });
+
+            const expression = [
+                'match',
+                ['get', 'status'],
+                'removed',
+                colors.removed,
+                'inoperable',
+                colors.inoperable,
+                colors.present
+            ]
+
+            map.addLayer({
+                'id': 'collection-boxes-surveyed',
+                'type': 'circle',
+                'source': 'collection-box-surveyed-src',
+                paint: {
+                    'circle-color': expression,
+                    'circle-radius': [
+                        "interpolate",
+                        ["linear"],
+                        ["zoom"],
+                        7, 4,
+                        14, 6,
+                        18, 30
+                    ]
+                },
+                layout: {
+                    'circle-sort-key': [
+                        'match',
+                        ['get', 'status'],
+                        'removed',
+                        2,
+                        'present',
+                        1,
+                        0
+                    ]
+                }
+            });
+
+        });
+
 
         map.on('mouseenter', 'collection-boxes-surveyed', function() {
             map.getCanvas().style.cursor = 'pointer';

@@ -25,19 +25,20 @@
             width: 10px;
 
             &.legend-item-box {
-                background-color: $postal-blue;   
+                border: 1px solid $postal-blue; 
+                background-color: transparent;   
             }
 
             &.legend-item-present {
-                background-color: green;   
+                background-color: $postal-blue;   
             }
 
             &.legend-item-removed {
-                background-color: red;   
+                background-color: #d7191c;   
             }
 
             &.legend-item-inoperable {
-                background-color: darkorange;   
+                background-color: #fdae61;   
             }
         }
     }
