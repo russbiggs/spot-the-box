@@ -7,7 +7,7 @@ There are over 200k United State Postal Service collection boxes across the Unit
 
 ## Data
 
-The data used in Spot the Box comes from a FOIA request in August 2019. The data file includes 205,241 USPS collection boxes, both USPS Blue Boxes and Boxes located in Post Office Lobbies.
+The data used in Spot the Box comes from a [FOIA request](https://github.com/nstory/collection_boxes) in August 2019. The data file includes 205,241 USPS collection boxes, both USPS Blue Boxes and Boxes located in Post Office Lobbies.
 
 ## Contributing
 
