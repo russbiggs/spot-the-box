@@ -13,4 +13,4 @@ The data used in Spot the Box comes from a [FOIA request](https://github.com/nst
 
 We welcome contributions in the form of issues and pull requests. 
 
-We are also discussing this project slack at https://slack.openstreetmap.us/ in the #map-the-mail channel
+We are also discussing this project slack at https://slack.openstreetmap.us/ in the #spot-the-box channel
