@@ -35,6 +35,7 @@ class Form {
         }
         this.removedBtn.data = data;
         this.presentBtn.data = data;
+        this.inoperableBtn.data = data;
         this.collectionBoxInfo.innerHTML = `<p>Outlet ID: ${properties.OUTLETID}</p><p>Type: ${properties.BUSNAME}</p><p>Address: ${properties.ADDR1}</p>`
     }
 
