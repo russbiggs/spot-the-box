@@ -218,7 +218,7 @@ const colors = {
                 const outlet = feature.properties.outlet;
                 const createdAt = parseFloat(feature.properties.createdAt);
                 const d = new Date(createdAt * 1000); // python time in seconds, multiply by 1000 for milliseconds
-                const dateSurveyed = `${(d.getMonth()+1)}-${d.getDate()}-${d.getFullYear()} ${d.getHours()}:${d.getMinutes()}`;
+                const dateSurveyed = `${(d.getMonth()+1)}-${d.getDate()}-${d.getFullYear()} ${d.getHours().toString().padStart(2,'0')}:${d.getMinutes().toString().padStart(2,'0')}`;
 
                 while (Math.abs(e.lngLat.lng - coordinates[0]) > 180) {
                     coordinates[0] += e.lngLat.lng > coordinates[0] ? 360 : -360;
