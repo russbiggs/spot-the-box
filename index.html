@@ -24,9 +24,31 @@
     <header class="header">
         <button class="btn btn-back btn-back--hidden js-btn-back"></button>
         <h1 class="title">Spot the Box</h1>
-        <button class="btn btn-about js-btn-about"></button>
+        <div class="action-btns">
+            <button class="btn btn-how-to js-btn-how-to"></button>
+            <button class="btn btn-about js-btn-about"></button>
+        </div>
+
     </header>
     <main>
+        <div class="how-to-container how-to-container--hidden js-how-to-container">
+            <div class="how-to-body">
+                <h2>How to map a USPS Collection Box </h2>
+                <h4>Getting Started</h4>
+                <p>Find an unsurveyed box on the map nearest you. Walk up to the box so you can confirm its status. The goal of this project is in-person survey, don’t mark a box present or removed unless you can confirm its status in-person. Click on the unsurveyed point on the map. You will see the address of the box and an outlet ID at the top of the screen. Confirm you are at the correct address. Select the status of the box and click the Save button.</p>
+                <img src="/static/img/survey.png" alt="example survye screen">
+                <h4>Finding a Box</h4>
+                <p>If at first you don’t see a collection box check around the block, sometimes boxes aren’t at the front of a building or are not exactly at the location shown on the map. If there are multiple boxes on the map in close vicinity look at the top of the collection box and you should see a label like this:</p>
+                <img src="/static/svg/collectionboxl.svg" alt="collection box label">
+                <p>Match the Location ID No. with the Outlet ID in Spot the Box. This number will confirm which collection box you are at.</p>
+                <h4>Confirming Removed Boxes</h4>
+                <p>If you suspect a box has been removed, double check the labels of surrounding boxes first to make sure they are not the same as the box label you are surveying. A clear indication of a removed box is when you see an empty concrete pad like this:</p>
+                <img src="/static/img/missing_box.jpg" alt="missing collection box">
+                <h4>Post Office Lobby Boxes</h4>
+                <p>If you cannot find the box, double check the popup of the unsurveyed box. Some collection boxes are located inside a Post Office lobby. These are listed in the application as “Type: USPS COLLECTION BOX - PO LOBBY.” Check inside the Post Office lobby to confirm a box.</p>
+                <img src="/static/img/po_lobby.png" alt="PO lobby example">
+            </div>
+        </div>
         <div class="overview-container js-overview-container">
             <div class="overview-map js-overview-map" id="map"></div>
             <div id="box-legend" class="legend js-legend">

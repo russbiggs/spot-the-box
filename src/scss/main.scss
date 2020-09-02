@@ -4,6 +4,7 @@
 @import 'snack';
 @import 'modal';
 @import 'legend';
+@import 'how-to';
 
 
 @font-face {
@@ -42,9 +43,14 @@ body {
     -webkit-justify-content: space-between;
 }
 
+.action-btns {
+    margin: 0px;
+    display: flex;
+}
+
 .title {
     font-family: 'Postmaster';
-    margin:0px 5px;
+    margin:0 auto;
     padding:0;
     line-height: $header-height;
     font-size: 18px;
@@ -99,16 +105,16 @@ main {
     height: calc(100vh - #{$header-height});
     width: 100vw;
     overflow-y: auto;
+
+    &--hidden {
+        display: none;
+    }
 }
 
 .btn-row {
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-
-.overview-container--hidden {
-    display: none;
 }
 
 .media-row--hidden {
