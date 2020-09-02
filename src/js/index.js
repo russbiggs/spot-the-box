@@ -36,6 +36,17 @@ const colors = {
         howTo.hide();
     }
 
+    function setPopupClickListeners(emitter, features) {
+        const listItems = document.querySelectorAll('.popup-list-item');
+        for (let i = 0; i< listItems.length; i++) {
+            const li = listItems[i];
+            const feature = features.find(x => x.properties.OUTLETID === parseInt(li.textContent))
+            li.addEventListener('click', () => {
+                emitter.emit('point-select', feature);
+            });
+        }
+    }
+
     emitter.on('point-select', form.show);
     emitter.on('point-select', hideMap);
     emitter.on('point-select', backBtn.show);
@@ -238,8 +249,24 @@ const colors = {
             }
             f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes'] });
             if (f.length) {
-                emitter.emit('point-select', f[0]);
-                return;
+                if (f.length > 1) {
+                    const feature = f[0]
+                    const coordinates = feature.geometry.coordinates.slice();
+                    let list = '';
+                    for (const feature of f) {
+                        list += `<li class="popup-list-item">${feature.properties.OUTLETID}</li>`
+                    }
+                    new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`${f.length} collection boxes at this point select one: <br><ul>${list}</ul>`)
+                    .addTo(map);
+
+                    setPopupClickListeners(emitter, f);
+                } else {
+                    emitter.emit('point-select', f[0]);
+                    return;
+                }
+
             } 
             return;
         });
