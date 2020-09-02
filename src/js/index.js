@@ -5,6 +5,7 @@ import Form from './form';
 import {BackBtn} from './buttons';
 import Snack from './snack';
 import Modal from './modal';
+import HowTo from './how-to';
 
 const colors = {
     present: '#004B87',
@@ -19,30 +20,34 @@ const colors = {
 
     const modal = new Modal(emitter);
     const form = new Form(emitter);
+    const howTo = new HowTo(emitter)
     const backBtn = new BackBtn(emitter);
 
     const snack = new Snack(emitter);
 
     function hideMap() {
-        const overviewContainer = document.querySelector('.overview-container');
+        const overviewContainer = document.querySelector('.js-overview-container');
         overviewContainer.classList.add('overview-container--hidden');
     }
 
     function showMap() {
-        const overviewContainer = document.querySelector('.overview-container');
+        const overviewContainer = document.querySelector('.js-overview-container');
         overviewContainer.classList.remove('overview-container--hidden');
+        howTo.hide();
     }
 
-    emitter.on('point-select', form.show)
-    emitter.on('point-select', hideMap)
-    emitter.on('point-select', backBtn.show)
-    emitter.on('data-update', form.saveBtn.update)
+    emitter.on('point-select', form.show);
+    emitter.on('point-select', hideMap);
+    emitter.on('point-select', backBtn.show);
+    emitter.on('how-to', hideMap);
+    emitter.on('how-to', backBtn.show);
+    emitter.on('data-update', form.saveBtn.update);
     emitter.on('show-map', showMap);
     emitter.on('show-map', form.hide);
     emitter.on('data-save', showMap);
     emitter.on('data-save', form.hide);
     emitter.on('data-save', snack.showSnack);
-    emitter.on('data-save', backBtn.hide)
+    emitter.on('data-save', backBtn.hide);
     emitter.on('data-save', () => {
         refreshData();
     });
