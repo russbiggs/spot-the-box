@@ -127,6 +127,39 @@ main {
     position: relative;
 }
 
-.popup-list-item {
-    cursor: pointer;
+.multi-point-list {
+    list-style: none;
+    padding:0;
+
+    .popup-list-item {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        margin: 4px;
+        height: 48px;
+
+        .marker {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 8px;
+          }
+          
+          .marker--unsurveyed {
+            box-sizing: border-box;
+            border: solid 1px $postal-blue;;
+          }
+          
+          .marker--present {
+            background-color:$postal-blue;
+          }
+          
+          .marker--removed {
+            background-color: $red;
+          }
+          
+          .marker--inoperable {
+            background-color:  $yellow;
+          }
+    }
 }
