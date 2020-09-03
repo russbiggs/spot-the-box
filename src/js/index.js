@@ -113,6 +113,16 @@ const colors = {
             map.getSource('collection-box-surveyed-src').setData(data);
         })
     }
+
+    function findFeatureStatus(feature, fc) {
+        const outletId = feature.properties.OUTLETID;
+        const index = fc.features.findIndex(p => p.properties.outlet == outletId);
+        if (index > -1) {
+            return fc.features[index].properties.status;
+        } else {
+            return 'unsurveyed';
+        }
+    }
   
     map.on('load', function() {
 
@@ -161,8 +171,12 @@ const colors = {
 
         // Surveyed postbox locations
 
+        let surveyedGeoJSON;
+
         fetch('https://spot-the-box.s3.amazonaws.com/reports.json').then(res => res.json()).then(data=> {
 
+
+            surveyedGeoJSON = data;
             map.addSource('collection-box-surveyed-src', {
                 type: 'geojson',
                 data: data
@@ -226,7 +240,31 @@ const colors = {
         });
 
         map.on('click', function(e) {
-            let f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes-surveyed'] });
+            let f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes'] });
+            if (f.length) {
+                if (f.length > 1) {
+                    const feature = f[0]
+                    const coordinates = feature.geometry.coordinates.slice();
+                    let list = '';
+                    for (const feature of f) {      
+                        const featureStatus = findFeatureStatus(feature, surveyedGeoJSON);
+                        const marker = `<div class="marker marker--${featureStatus}"></div>`;
+                        list += `<li class="popup-list-item">${marker} ${feature.properties.OUTLETID}</li>`;
+                    }
+                    new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`${f.length} collection boxes at this point<br>Select one:<br><ul class="multi-point-list">${list}</ul>`)
+                    .addTo(map);
+
+                    setPopupClickListeners(emitter, f);
+                    return;
+                } else {
+                    emitter.emit('point-select', f[0]);
+                    return;
+                }
+
+            } 
+            f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes-surveyed'] });
             if (f.length) {
                 const feature = f[0]
                 const coordinates = feature.geometry.coordinates.slice();
@@ -247,27 +285,6 @@ const colors = {
 
                 return;
             }
-            f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes'] });
-            if (f.length) {
-                if (f.length > 1) {
-                    const feature = f[0]
-                    const coordinates = feature.geometry.coordinates.slice();
-                    let list = '';
-                    for (const feature of f) {
-                        list += `<li class="popup-list-item">${feature.properties.OUTLETID}</li>`
-                    }
-                    new mapboxgl.Popup()
-                    .setLngLat(coordinates)
-                    .setHTML(`${f.length} collection boxes at this point select one: <br><ul>${list}</ul>`)
-                    .addTo(map);
-
-                    setPopupClickListeners(emitter, f);
-                } else {
-                    emitter.emit('point-select', f[0]);
-                    return;
-                }
-
-            } 
             return;
         });
 
