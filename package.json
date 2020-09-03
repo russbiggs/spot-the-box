@@ -1,6 +1,6 @@
 {
   "name": "usps",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "clean": "rm -rf dist && mkdir dist",
@@ -8,9 +8,26 @@
     "build-js": " webpack",
     "build": "yarn run clean && yarn run build-css && yarn run build-js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/russbiggs/spot-the-box.git"
+  },
+  "bugs": {
+    "url": "https://github.com/russbiggs/spot-the-box/issues"
+  },
+  "author": {
+    "name":"Russ Biggs",
+    "url": "https://russbiggs.com"
+  },
+  "contributors": [
+    "Mikel Maron",
+    "Arun Ganesh",
+    "Ryan TG",
+    "Diane Fritz",
+    "Steve Charron"
+  ],
   "license": "MIT",
   "dependencies": {
-    "idb-keyval": "^3.2.0",
     "mitt": "^2.1.0"
   },
   "devDependencies": {
