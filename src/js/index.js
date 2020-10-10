@@ -5,6 +5,7 @@ import Form from './form';
 import {BackBtn} from './buttons';
 import Snack from './snack';
 import Modal from './modal';
+import HowTo from './how-to';
 
 const colors = {
     present: '#004B87',
@@ -19,30 +20,45 @@ const colors = {
 
     const modal = new Modal(emitter);
     const form = new Form(emitter);
+    const howTo = new HowTo(emitter)
     const backBtn = new BackBtn(emitter);
 
     const snack = new Snack(emitter);
 
     function hideMap() {
-        const overviewContainer = document.querySelector('.overview-container');
+        const overviewContainer = document.querySelector('.js-overview-container');
         overviewContainer.classList.add('overview-container--hidden');
     }
 
     function showMap() {
-        const overviewContainer = document.querySelector('.overview-container');
+        const overviewContainer = document.querySelector('.js-overview-container');
         overviewContainer.classList.remove('overview-container--hidden');
+        howTo.hide();
     }
 
-    emitter.on('point-select', form.show)
-    emitter.on('point-select', hideMap)
-    emitter.on('point-select', backBtn.show)
-    emitter.on('data-update', form.saveBtn.update)
+    function setPopupClickListeners(emitter, features) {
+        const listItems = document.querySelectorAll('.popup-list-item');
+        for (let i = 0; i< listItems.length; i++) {
+            const li = listItems[i];
+            const feature = features.find(x => x.properties.OUTLETID === parseInt(li.textContent))
+            li.addEventListener('click', () => {
+                emitter.emit('point-select', feature);
+            });
+        }
+    }
+
+    emitter.on('point-select', form.show);
+    emitter.on('point-select', hideMap);
+    emitter.on('point-select', backBtn.show);
+    emitter.on('how-to', hideMap);
+    emitter.on('how-to', backBtn.show);
+    emitter.on('data-update', form.saveBtn.update);
     emitter.on('show-map', showMap);
     emitter.on('show-map', form.hide);
     emitter.on('data-save', showMap);
     emitter.on('data-save', form.hide);
     emitter.on('data-save', snack.showSnack);
-    emitter.on('data-save', backBtn.hide)
+    emitter.on('data-save', backBtn.hide);
     emitter.on('data-save', () => {
         refreshData();
     });
@@ -97,6 +113,16 @@ const colors = {
             map.getSource('collection-box-surveyed-src').setData(data);
         })
     }
+
+    function findFeatureStatus(feature, fc) {
+        const outletId = feature.properties.OUTLETID;
+        const index = fc.features.findIndex(p => p.properties.outlet == outletId);
+        if (index > -1) {
+            return fc.features[index].properties.status;
+        } else {
+            return 'unsurveyed';
+        }
+    }
   
     map.on('load', function() {
 
@@ -145,8 +171,12 @@ const colors = {
 
         // Surveyed postbox locations
 
+        let surveyedGeoJSON;
+
         fetch('https://spot-the-box.s3.amazonaws.com/reports.json').then(res => res.json()).then(data=> {
 
+
+            surveyedGeoJSON = data;
             map.addSource('collection-box-surveyed-src', {
                 type: 'geojson',
                 data: data
@@ -210,7 +240,31 @@ const colors = {
         });
 
         map.on('click', function(e) {
-            let f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes-surveyed'] });
+            let f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes'] });
+            if (f.length) {
+                if (f.length > 1) {
+                    const feature = f[0]
+                    const coordinates = feature.geometry.coordinates.slice();
+                    let list = '';
+                    for (const feature of f) {      
+                        const featureStatus = findFeatureStatus(feature, surveyedGeoJSON);
+                        const marker = `<div class="marker marker--${featureStatus}"></div>`;
+                        list += `<li class="popup-list-item">${marker} ${feature.properties.OUTLETID}</li>`;
+                    }
+                    new mapboxgl.Popup()
+                    .setLngLat(coordinates)
+                    .setHTML(`${f.length} collection boxes at this point<br>Select one:<br><ul class="multi-point-list">${list}</ul>`)
+                    .addTo(map);
+
+                    setPopupClickListeners(emitter, f);
+                    return;
+                } else {
+                    emitter.emit('point-select', f[0]);
+                    return;
+                }
+
+            } 
+            f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes-surveyed'] });
             if (f.length) {
                 const feature = f[0]
                 const coordinates = feature.geometry.coordinates.slice();
@@ -231,11 +285,6 @@ const colors = {
 
                 return;
             }
-            f = map.queryRenderedFeatures(e.point, { layers: ['collection-boxes'] });
-            if (f.length) {
-                emitter.emit('point-select', f[0]);
-                return;
-            } 
             return;
         });
 
