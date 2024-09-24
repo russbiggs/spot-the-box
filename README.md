@@ -1,5 +1,11 @@
+
+
+
 # Spot the Box
 <img width="180" alt="Screen Shot" src="https://user-images.githubusercontent.com/8487728/91896147-9c7c7980-ec55-11ea-95ce-6eceed06eecd.png">
+
+> [!WARNING]  
+> Spot the Box is no longer active and no longer maintained.
 
 ## About
 
